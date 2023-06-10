@@ -27,7 +27,7 @@ function App() {
         />
 
         <Route 
-        path ="/salondetails:id" 
+        path ="/salondetails/:id" 
         element={<Salondetails/>} 
         />
 

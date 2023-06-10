@@ -39,7 +39,7 @@ function SuggestionSalons() {
     // navigte to page details
     const navigate = useNavigate()
     function handleNavigatePage(id) {
-        navigate(`/salondetails/${id}`)
+        navigate(`/salondetails/${id}`, {state: {id: id}, })
     }
   return (
     <div 
