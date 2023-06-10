@@ -35,6 +35,12 @@ function SuggestionSalons() {
         setItemOffset(newOffset);
     };
 
+
+    // navigte to page details
+    const navigate = useNavigate()
+    function handleNavigatePage(id) {
+        navigate(`/salondetails/${id}`)
+    }
   return (
     <div 
         className='w-full flex flex-col gap-[3rem] text-[0.95]'
@@ -83,7 +89,9 @@ function SuggestionSalons() {
                {/* SALON SHOP IMAGE */}
                 <div
                     className='relative w-[100%] lg:w-[32%] lg:min-h-[40vh] cursor-pointer'
-                >
+                onClick={() => {
+                    handleNavigatePage(item.id)
+                }}>
                         <img 
                             className="w-[100%] h-[15rem] md:h-[25rem] lg:h-[15rem] lg:rounded-2xl rounded-lg object-cover"   
                             src={item.images.length > 1 ? item?.images[0] : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eEqxqteZ-yqR2AC-W6vv7mY6e4A8cclnkw&usqp=CAU"}
