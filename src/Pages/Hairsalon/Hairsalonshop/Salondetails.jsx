@@ -5,7 +5,7 @@ export default function Salondetails() {
     const state = location.state
     return (
         <div>
-            <h1>Salon Details</h1>
+            <h1>{state.id}</h1>
         </div>
     )
 }
