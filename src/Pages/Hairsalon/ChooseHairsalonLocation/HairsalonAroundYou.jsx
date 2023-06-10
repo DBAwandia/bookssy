@@ -4,10 +4,10 @@ import { hairSalonCities } from "../../../assets/Dummydata/Dummydata"
 function HairsalonAroundYou() {
   return (
     <div
-        className='px-[5rem] py-[2rem] flex flex-col gap-[3rem]'
+        className='lg:px-[5rem] px-[2rem] py-[2rem] flex flex-col gap-[3rem]'
     >
         <h1
-            className='text-[1.5rem] text-center text-[#484848] font-[580]'
+            className='lg:text-[1.5rem] text-[1.2rem] text-center text-[#484848] font-[580]'
         >
             Hair Salons - around you
 
@@ -17,13 +17,13 @@ function HairsalonAroundYou() {
             className='flex flex-col gap-[2rem]'
         >
             <div
-                className='w-full grid gap-[2rem] grid-cols-3 text-[0.95rem]' 
+                className='w-full grid gap-[2rem] grid-cols-1 md:grid-cols-3 text-[0.95rem]' 
             >
                 {/* map popular treatment data from dummy json */}
                 {hairSalonCities.map(item =>
                     <div
                         key={item.id}
-                        className='w-auto px-[0.7rem] py-[0.5rem] border-2 border-[#ececec] rounded-xl'
+                        className='w-auto px-[0.7rem] py-[0.5rem] border-2 border-[#ececec] rounded-md md:rounded-xl'
                     >
                         <div 
                             className='flex items-center justify-between'
@@ -34,7 +34,7 @@ function HairsalonAroundYou() {
                                 {item.name}
                             </p>
                             <BsArrowRight
-                                className='text-[1.6rem] text-[#bfbfbf]'
+                                className='lg:text-[1.6rem] text-[1.3rem] text-[#bfbfbf]'
                             />
                         </div>
                        
@@ -46,7 +46,7 @@ function HairsalonAroundYou() {
 
         {/* use my location button */}
         <button
-            className="text-start mr-auto w-auto bg-[#00a3ad] text-white px-[3rem] py-[0.7rem] rounded-lg"
+            className="md:text-start mr-auto md:w-auto w-full bg-[#00a3ad] text-white px-[2rem] md:px-[3rem] py-[0.7rem] rounded-md md:rounded-lg"
         >
             Use my location
         </button>

@@ -46,6 +46,8 @@ function HairSalonSliderCategories() {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 initialSlide: 0,
+                autoplay: true,
+
             },
             },
             {
@@ -54,6 +56,8 @@ function HairSalonSliderCategories() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 initialSlide: 0,
+                autoplay: true,
+
             },
             },
         ],
@@ -69,7 +73,7 @@ function HairSalonSliderCategories() {
                     {/* NEXT ARROW */}
                     <div
                         onClick={next}
-                        className="absolute cursor-pointer self-center text-[1.2rem] right-[0rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer self-center text-[1.2rem] right-[0rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
                     >
                         <BsArrowRight/>
                     </div>
@@ -77,7 +81,7 @@ function HairSalonSliderCategories() {
                     {/* PREV ARROW */}
                     <div
                         onClick={previous}
-                        className="absolute cursor-pointer text-[1.2rem] left-[-1.5rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer text-[1.2rem] left-[-1.5rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
                     >
                         <BsArrowLeft/>
                     </div>
@@ -93,12 +97,12 @@ function HairSalonSliderCategories() {
                         className="w-full relative flex flex-col justify-center"
                         key={item.id}
                     >
-                    <div className='w-[90%] relative'>
-                        <img 
-                                className="lg:w-[100%] lg:h-[12rem] rounded-lg object-cover"   
+                    <div className='lg:w-[90%] w-full relative'>
+                            <img 
+                                className="w-[100%] h-[14rem] md:rounded-lg rounded-md object-cover"   
                                 src={item.images[0]}
                                 alt="image"
-                                />
+                            />
                         {/* RATINGS AND REVIEWS*/}
                         <div 
                             className='absolute w-[auto] flex flex-col items-center gap-[0.3rem] top-[0rem] right-[0] bg-[#181717] opacity-[0.9] text-white px-[0.6rem] py-[0.4rem] rounded-bl-lg  rounded-tr-lg'
@@ -122,12 +126,12 @@ function HairSalonSliderCategories() {
                                 className="w-full flex flex-col gap-[1rem]"
                             >
                                 <p
-                                    className="text-[#222324] text-[1.2rem] mt-[1.5rem] font-[650]"
+                                    className="text-[#222324] md:text-[1.2rem] text-[1rem] mt-[1.5rem] font-[650]"
                                     >
                                     {item.name}
                                 </p>
                                 <span
-                                    className="w-[85%] text-[#767676]"
+                                    className="w-[85%] text-[0.95rem] text-[#767676]"
                                     >
                                     {item.address}
                                 </span>
@@ -137,7 +141,7 @@ function HairSalonSliderCategories() {
                                 {!liked &&
                                     <div
                                         onClick={setLikedTrue}
-                                        className="absolute right-[0.3rem] cursor-pointer top-[3.2rem] text-[1.6rem]"
+                                        className="absolute lg:right-[0.3rem] right-0 cursor-pointer top-[3.2rem] lg:text-[1.6rem] text-[1.3rem]" 
                                         >
                                         <AiOutlineHeart/>
                                     </div>
@@ -147,7 +151,7 @@ function HairSalonSliderCategories() {
                                 {liked &&
                                     <div
                                         onClick={setLikedFalse}
-                                        className="absolute right-[0.3rem] cursor-pointer top-[3.2rem] text-[#ff003c] text-[1.6rem]"
+                                        className="absolute lg:right-[0.3rem] right-0 cursor-pointer top-[3.2rem] text-[#ff003c] lg:text-[1.6rem] text-[1.3rem]" 
                                         >
                                         <AiFillHeart/>
                                     </div>

@@ -55,6 +55,8 @@ function HairSalonCustomerReviews() {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 initialSlide: 0,
+                autoplay: true,
+
             },
             },
             {
@@ -63,6 +65,8 @@ function HairSalonCustomerReviews() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 initialSlide: 0,
+                autoplay: true,
+
             },
             },
         ],
@@ -70,13 +74,13 @@ function HairSalonCustomerReviews() {
 
   return (
     <div
-        className="px-[4rem] py-[2rem] flex flex-col gap-[3rem] text-[0.95rem]"
+        className="md:px-[4rem] px-[2rem] py-[2rem] flex flex-col gap-[3rem] text-[0.95rem]"
     >
       <div
         className="flex flex-col gap-[2rem]"
       >
         <h1 
-            className='text-[1.5rem] text-center text-[#484848] font-[580]'
+            className='lg:text-[1.5rem] text-[1.2rem] text-center text-[#484848] font-[580]'
         >
             Hair Salons - customer reviews
         </h1>
@@ -87,7 +91,7 @@ function HairSalonCustomerReviews() {
                     {/* NEXT ARROW */}
                     <div
                         onClick={next}
-                        className="absolute cursor-pointer self-center text-[1.2rem] right-[-1.8rem] p-[1rem] top-[7rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer self-center text-[1.2rem] right-[-1.8rem] p-[1rem] top-[7rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
                     >
                         <BsArrowRight/>
                     </div>
@@ -95,7 +99,7 @@ function HairSalonCustomerReviews() {
                     {/* PREV ARROW */}
                     <div
                         onClick={previous}
-                        className="absolute cursor-pointer text-[1.2rem] left-[-1.8rem] p-[1rem] top-[7rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer text-[1.2rem] left-[-1.8rem] p-[1rem] top-[7rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
                     >
                         <BsArrowLeft/>
                     </div>

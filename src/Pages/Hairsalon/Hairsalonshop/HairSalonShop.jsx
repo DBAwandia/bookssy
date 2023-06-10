@@ -2,21 +2,21 @@
 import HairSalonSlider from './HairSalonSlider'
 import SuggestedSalonShops from './SuggestedSalonShops'
 import MostPoularTreatments from './MostPopularTreatments'
-import Navbar from '../../../components/Navbar'
-import Footer from '../../../components/Footer'
-import HeroBottom from '../../../components/HomeComponents/HeroBottom'
+// import Navbar from '../../../components/Navbar'
+// import Footer from '../../../components/Footer'
+// import HeroBottom from '../../../components/HomeComponents/HeroBottom'
 
 function Hairsalon() {
   return (
     <>
       {/* NAVBAR*/}
-      <div className='bg-[#1b1d21] h-[4rem] px-[2rem] pt-[1rem]'>
-        <Navbar/>
+      <div className='bg-[#1b1d21] h-[4rem] md:px-[2rem] px-[1rem] pt-[1rem]'>
+        {/* <Navbar/> */}
       </div>
 
       {/* ALL SHOPS ( HAIRSALONSHOP , BARBESHOP , NAIL SHOP ... etc) */}
-      <div className='bg-[#1b1d21] h-[5rem] px-[2rem] pt-[1rem]' >
-        <HeroBottom/>
+      <div className='bg-[#1b1d21] h-[5rem] md:px-[2rem] px-[1rem] pt-[1rem]' >
+        {/* <HeroBottom/> */}
       </div>
 
     <div
@@ -24,7 +24,7 @@ function Hairsalon() {
     >
       {/* HAIRSALON COMPONENT HEADER */}
       <div
-        className="text-[1.5rem] px-[2rem] pt-[1rem] text-[#484848] font-bold" 
+        className="lg:text-[1.5rem] text-[1.2rem] md:px-[2rem] px-[1rem] pt-[1rem] text-[#484848] font-bold" 
       >
           <h1>
             Hair salons and Hair dressers in USA (2000)
@@ -33,38 +33,38 @@ function Hairsalon() {
 
       {/* HAIRSALONSLIDERCATEGORY COMPONENT */}
       <div 
-        className="w-full px-[2rem] "
+        className="w-full md:px-[2rem] px-[1rem] "
       >
         <HairSalonSlider/>
       </div>
 
       {/* BREAK LINE */}
-      <div className='px-[2rem]'>
+      <div className='md:px-[2rem] px-[1rem]'>
         <hr />
       </div>
 
       {/* SUGGESTIONSALON COMPONENT */}
       <div 
-        className="px-[2rem]"
+        className="md:px-[2rem] px-[1rem]"
       >
         <SuggestedSalonShops/>
       </div>
 
       {/* BREAK LINE */}
-      <div className='px-[2rem]'>
+      <div className='md:px-[2rem] px-[1rem]'>
         <hr />
       </div>
 
       {/* MOST POPULAR TREATMENTS */}
       <div
-        className="px-[2rem]"
+        className="md:px-[2rem] px-[1rem]"
       >
         <MostPoularTreatments/>
       </div>
 
       {/* FOOTER*/}
       <div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
 
     </div>
