@@ -49,16 +49,16 @@ function SuggestionSalons() {
                     className='flex items-center gap-[1rem]'
                 >
                     <BsSliders
-                        className='text-[1.5\4rem]'
+                        className='text-[1.4rem]'
                     />
                     <p>Filter</p>
                 </div>
             </div>
             <div>
                 <div
-                    className='flex items-center gap-[1rem] border-2 border-[#f5f5f5] w-auto bg-[#f0f0f0] px-[1rem] py-[0.7rem] rounded-xl'
+                    className='flex items-center gap-[1rem] border-2 border-[#f5f5f5] w-auto bg-[#f0f0f0] md:px-[1rem] px-[0.4rem] py-[0.7rem] rounded-xl'
                 >
-                    <p>Sort by: </p>
+                    <p>Sortby: </p>
                     <div
                         className='flex items-center gap-[1rem]'
                     >
@@ -75,15 +75,15 @@ function SuggestionSalons() {
         {currentItems?.map((item) =>
             <div
                 key={item.id}
-                className='w-full flex gap-[1.5rem] min-h-[40vh]'
+                className='w-full lg:flex grid grid-cols-1 gap-[1.5rem] min-h-[40vh]'
             >
 
                {/* SALON SHOP IMAGE */}
                 <div
-                    className='relative w-[32%] min-h-[40vh]'
+                    className='relative w-[100%] lg:w-[32%] lg:min-h-[40vh]'
                 >
                         <img 
-                            className="w-[100%] h-[17rem] rounded-2xl object-cover"   
+                            className="w-[100%] h-[15rem] md:h-[25rem] lg:h-[15rem] lg:rounded-2xl rounded-lg object-cover"   
                             src={item.images.length > 1 ? item?.images[0] : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eEqxqteZ-yqR2AC-W6vv7mY6e4A8cclnkw&usqp=CAU"}
                             alt="image"
                         />
@@ -106,7 +106,7 @@ function SuggestionSalons() {
 
                         {/* Recommended */}
                         <div
-                            className='absolute left-[1rem] top-[1rem] rounded-md text-[0.7rem] font-[590] flex items-center gap-[0.3rem] w-auto px-[0.8rem] py-[0.5rem] bg-white text-[#161718]'
+                            className='absolute md:left-[1rem] left-[0.5rem] md:top-[1rem] top-[0.5rem] rounded-md md:text-[0.7rem] text-[0.5rem] font-[590] flex items-center gap-[0.3rem] w-auto px-[0.8rem] py-[0.5rem] bg-white text-[#161718]'
                         >
                             <IoMdThumbsUp
                                 className='text-[1rem] text-[black]'
@@ -119,13 +119,13 @@ function SuggestionSalons() {
 
                 {/* SALON NAME , ADDRESS AND ITS SERVICES AND PRICE  */}
                <div
-                    className='w-[65%] min-h-[40vh]'
+                    className='w-[100%] lg:w-[65%] lg:min-h-[40vh]'
                 >
                     <div
-                        className='px-[1rem] w-full flex flex-col'
+                        className='lg:px-[1rem] w-full flex flex-col'
                     >
                         <div
-                            className='flex flex-col gap-[2rem] pb-[2rem] border-b-2' 
+                            className='flex flex-col lg:gap-[2rem] gap-[0.7rem] pb-[2rem] border-b-2' 
                         >
                             <h1
                                 className='text-[#484848] font-bold text-[1.1rem]'

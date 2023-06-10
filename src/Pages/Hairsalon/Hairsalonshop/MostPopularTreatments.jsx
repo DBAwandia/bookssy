@@ -17,7 +17,7 @@ function MostPoularTreatments() {
         className='w-full flex flex-col gap-[3rem]'
     >
         <h1
-            className='text-[1.5rem] text-[#484848] font-[580]'
+            className='lg:text-[1.5rem] text-[1.2rem] text-[#484848] font-[580]'
         >
             Most popular treatments
 
@@ -27,13 +27,13 @@ function MostPoularTreatments() {
             className='flex flex-col gap-[2rem]'
         >
             <div
-                className='w-full grid gap-[2rem] grid-cols-3 text-[0.95rem]' 
+                className='w-full grid gap-[2rem] md:grid-cols-3 grid-cols-1 text-[0.95rem]' 
             >
                 {/* map popular treatment data from dummy json */}
                 {slicedArray.map(item =>
                     <div
                         key={item.id}
-                        className='w-auto px-[0.7rem] py-[0.5rem] border-2 border-[#ececec] rounded-xl'
+                        className='w-auto px-[0.7rem] py-[0.5rem] border-2 border-[#ececec] rounded-md md:rounded-xl'
                     >
                         <div 
                             className='flex items-center justify-between'
@@ -44,7 +44,7 @@ function MostPoularTreatments() {
                                 {item.name}
                             </p>
                             <BsArrowRight
-                                className='text-[1.6rem] text-[#bfbfbf]'
+                                className='lg:text-[1.6rem] text-[1.4rem] text-[#bfbfbf]'
                             />
                         </div>
                     </div>

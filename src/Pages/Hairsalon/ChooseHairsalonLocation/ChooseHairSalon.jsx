@@ -1,6 +1,6 @@
-import Footer from "../../../components/Footer"
-import HeroBottom from "../../../components/HomeComponents/HeroBottom"
-import Navbar from "../../../components/Navbar"
+// import Footer from "../../../components/Footer"
+// import HeroBottom from "../../../components/HomeComponents/HeroBottom"
+// import Navbar from "../../../components/Navbar"
 import HairSalonCustomerReviews from "./HairSalonCustomerReviews"
 import HairSalonMoreDescription from "./HairSalonMoreDescription"
 import HairsalonAroundYou from "./HairsalonAroundYou"
@@ -10,12 +10,12 @@ function ChooseHairSalon() {
     <>
       {/* NAVBAR*/}
       <div className='bg-[#1b1d21] h-[4rem] px-[2rem] pt-[1rem]'>
-        <Navbar/>
+        {/* <Navbar/> */}
       </div>
 
       {/* ALL SHOPS ( HAIRSALONSHOP , BARBESHOP , NAIL SHOP ... etc) */}
       <div className='bg-[#1b1d21] h-[5rem] px-[2rem] pt-[1rem]' >
-        <HeroBottom/>
+        {/* <HeroBottom/> */}
       </div>
 
       {/* HairsalonDescription Near you */}
@@ -23,13 +23,13 @@ function ChooseHairSalon() {
         className="w-full py-[2rem] flex flex-col gap-[2rem]"
       >
         <div
-          className="w-[55%] self-center"
+          className="lg:w-[55%] w-[90%]  self-center"
         >
           <div
-            className="flex flex-col items-start gap-[2rem]"
+            className="flex flex-col items-start text-[0.95rem] gap-[2rem]"
           >
             <h1
-              className="w-[90%] text-[1.5rem] font-[600] tracking-normal text-[#383734]"
+              className="w-[90%] lg:text-[1.5rem] text-[1.2rem] font-[600] tracking-normal text-[#383734]"
             >
               Hair Salons and Hair Dressers Near you
             </h1>
@@ -43,7 +43,7 @@ function ChooseHairSalon() {
             </p>
 
             <img
-              className="w-full object-cover h-[30rem] rounded-lg"
+              className="w-full object-cover md:h-[30rem] h-[18rem] rounded-lg"
               src="https://d2zdpiztbgorvt.cloudfront.net/us/cms_content/1/3827e6dc24ec442eb32878d937e1091a.jpg"
               alt="booky hairsalon image"
             />
@@ -68,7 +68,7 @@ function ChooseHairSalon() {
 
         {/* FOOTER*/}
       <div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
 
 

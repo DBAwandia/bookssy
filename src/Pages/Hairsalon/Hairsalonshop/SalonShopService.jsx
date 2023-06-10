@@ -24,7 +24,7 @@ function SalonShopServices() {
                                     {item.name}
                                 </p>
                                 <span
-                                    className='text-[#818181] w-[70%]'
+                                    className='text-[#818181] md:w-[70%] w-[90%]'
                                 >
                                     {item.description}
                                 </span>
@@ -48,10 +48,10 @@ function SalonShopServices() {
 
                             </div>
                             <div
-                                className='flex items-center gap-[2.5rem]' 
+                                className='flex items-center lg:gap-[2.5rem] gap-[1rem]' 
                             >
                                 <div
-                                    className='flex flex-col text-right gap-[0.8rem]'
+                                    className='flex flex-col text-right md:gap-[0.8rem] gap-[0.3rem]'
                                 >
                                     <div
                                         className='flex items-center gap-1'
