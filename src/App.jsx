@@ -26,7 +26,10 @@ function App() {
           element={<ChooseHairSalon/>}
         />
 
-        <Route path ="/salondetails:id" element={<Salondetails/>} />
+        <Route 
+        path ="/salondetails:id" 
+        element={<Salondetails/>} 
+        />
 
       </Routes>
      </Router>

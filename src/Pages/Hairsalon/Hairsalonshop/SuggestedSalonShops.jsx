@@ -8,6 +8,8 @@ import ReactPaginate from 'react-paginate';
 import "./Paginate.css"
 import { RiArrowDownSLine } from 'react-icons/ri'
 
+import { useNavigate } from 'react-router-dom'
+
 function SuggestionSalons() {
 
     
@@ -80,7 +82,7 @@ function SuggestionSalons() {
 
                {/* SALON SHOP IMAGE */}
                 <div
-                    className='relative w-[100%] lg:w-[32%] lg:min-h-[40vh]'
+                    className='relative w-[100%] lg:w-[32%] lg:min-h-[40vh] cursor-pointer'
                 >
                         <img 
                             className="w-[100%] h-[15rem] md:h-[25rem] lg:h-[15rem] lg:rounded-2xl rounded-lg object-cover"   
@@ -128,7 +130,7 @@ function SuggestionSalons() {
                             className='flex flex-col lg:gap-[2rem] gap-[0.7rem] pb-[2rem] border-b-2' 
                         >
                             <h1
-                                className='text-[#484848] font-bold text-[1.1rem]'
+                                className='text-[#484848] font-bold text-[1.1rem] cursor-pointer'
                             >
                                 {item.name}
                             </h1>
