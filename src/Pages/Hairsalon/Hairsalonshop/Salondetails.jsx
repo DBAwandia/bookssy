@@ -5,12 +5,11 @@ import { useLocation } from "react-router-dom"
 export default function Salondetails() {
     const location = useLocation();
     const state = location.state;
-    const images = state.images;
 
     return (
         <>
-   
-                <img src={state.images[0]} alt="" />
+   {state.id} <br /> {state.name}name not showing  <br/> {state.address} <br /> {state.ratings} <br /> {state.reviews} {state.aboutUs} 
+   <img src={state.images} alt="" />
         </>
     );
 }
