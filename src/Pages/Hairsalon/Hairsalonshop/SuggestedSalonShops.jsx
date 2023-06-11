@@ -39,6 +39,7 @@ function SuggestionSalons() {
     // navigte to page details
     const navigate = useNavigate()
     function handleNavigatePage(id, images, address, ratings, reviews, aboutUs, name) {
+        window.scrollTo(0, 0)
         navigate(`/salondetails/${id}`, {state: {id: id, images: images, address: address, ratings: ratings, reviews: reviews, aboutUs: aboutUs, name: name}})
     }
   return (
