@@ -17,9 +17,9 @@ export default function Salondetails() {
         <article className="mt-20">
             <h2 className="font-bold text-3xl font-serif text-zinc-700">{state.name}</h2>
             <p className="font-serif text-xs text-zinc-600">{state.address}</p>
-            <span className="flex gap-2 mt-11">
-                <h2 className="text-3xl font-bold">Services</h2>
-                <input type="search" name=""  className="font-bg font-serif bg-zinc-300 rounded-md outline-none "/>
+            <span className="flex mt-11 justify-between gap-2">
+                <h2 className="text-3xl font-bold ">Services</h2>
+                <input type="search" name=""  className="font-bg font-serif bg-zinc-300 rounded-md outline-none flex w-[70%]" placeholder="Search for service"/>
             </span>
         </article>
         </aside>
