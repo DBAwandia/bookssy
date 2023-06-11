@@ -2,21 +2,23 @@
 import HairSalonSlider from './HairSalonSlider'
 import SuggestedSalonShops from './SuggestedSalonShops'
 import MostPoularTreatments from './MostPopularTreatments'
-// import Navbar from '../../../components/Navbar'
+import Navbar from '../../../components/Navbar'
 // import Footer from '../../../components/Footer'
-// import HeroBottom from '../../../components/HomeComponents/HeroBottom'
+import HeroBottom from '../../../components/HomeComponents/HeroBottom'
 
 function Hairsalon() {
   return (
-    <>
+    <div
+      className="flex flex-col"
+    >
       {/* NAVBAR*/}
-      <div className='bg-[#1b1d21] h-[4rem] md:px-[2rem] px-[1rem] pt-[1rem]'>
-        {/* <Navbar/> */}
+      <div className='bg-[#1b1d21] h-[4rem] md:px-[2rem] pt-[1rem]'>
+        <Navbar/>
       </div>
 
       {/* ALL SHOPS ( HAIRSALONSHOP , BARBESHOP , NAIL SHOP ... etc) */}
-      <div className='bg-[#1b1d21] h-[5rem] md:px-[2rem] px-[1rem] pt-[1rem]' >
-        {/* <HeroBottom/> */}
+      <div className='bg-[#1b1d21] lg:h-[5rem] h-[3.5rem] md:px-[2rem] pt-[1rem]' >
+        <HeroBottom/>
       </div>
 
     <div
@@ -68,7 +70,7 @@ function Hairsalon() {
       </div>
 
     </div>
-  </>
+  </div>
   )
 }
 

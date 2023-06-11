@@ -1,21 +1,23 @@
 // import Footer from "../../../components/Footer"
-// import HeroBottom from "../../../components/HomeComponents/HeroBottom"
-// import Navbar from "../../../components/Navbar"
+import HeroBottom from "../../../components/HomeComponents/HeroBottom"
+import Navbar from "../../../components/Navbar"
 import HairSalonCustomerReviews from "./HairSalonCustomerReviews"
 import HairSalonMoreDescription from "./HairSalonMoreDescription"
 import HairsalonAroundYou from "./HairsalonAroundYou"
 
 function ChooseHairSalon() {
   return (
-    <>
+    <div
+      className="flex flex-col"
+    >
       {/* NAVBAR*/}
-      <div className='bg-[#1b1d21] h-[4rem] px-[2rem] pt-[1rem]'>
-        {/* <Navbar/> */}
+      <div className='bg-[#1b1d21] h-[4rem] lg:px-[2rem] pt-[1rem]'>
+        <Navbar/>
       </div>
 
       {/* ALL SHOPS ( HAIRSALONSHOP , BARBESHOP , NAIL SHOP ... etc) */}
-      <div className='bg-[#1b1d21] h-[5rem] px-[2rem] pt-[1rem]' >
-        {/* <HeroBottom/> */}
+      <div className='bg-[#1b1d21] lg:h-[5rem] h-[3.5rem] lg:px-[2rem] pt-[1rem]' >
+        <HeroBottom/>
       </div>
 
       {/* HairsalonDescription Near you */}
@@ -73,7 +75,7 @@ function ChooseHairSalon() {
 
 
       </div>
-    </>
+    </div>
   )
 }
 

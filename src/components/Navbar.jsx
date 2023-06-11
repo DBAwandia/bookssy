@@ -4,23 +4,36 @@ import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsChevronDown } from "react-icons/bs";
 import { FLAGS } from "../../utitlities/iconsAndImages";
 import { Link } from "react-router-dom"
+import { BsArrowRight } from "react-icons/bs"
+
 
 export default function Navbar() {
   return (
-    <section className="w-full bg-transparent flex justify-between items-center">
+    <section className="w-full bg-transparent grid grid-col-1 gap-[1rem] lg:flex lg:justify-between items-center">
+
+      {/* list your business for mobile */}
+      <div
+        className="lg:hidden border-b-[0.5px] py-[0.7rem] w-full text-[#fff] font-bold justify-center flex items-center gap-[0.5rem]"
+      >
+        <h1>List Your Business</h1>
+        <BsArrowRight
+          className="text-[1.3rem]"
+        />
+      </div>
+
       {/* LOGO*/}
-      <div className="w-[30%]">
+      <div className="w-full grid justify-center items-center lg:justify-start lg:w-[30%]">
         <Link to="/">
           <img
             src={Logo}
             alt="Booksy Logo"
-            style={{ width: "100px", height: "22px " }}
+            className="justify-center w-[100px] h-[22px]"
           />
         </Link>
       </div>
 
       {/* OTHERS */}
-      <div className="w-[70%] flex flex-row justify-end items-center gap-7 text-white">
+      <div className="hidden lg:block lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
         {/* login */}
         <div className="flex gap-2 items-center">
           <HiOutlineUserCircle size={35} />

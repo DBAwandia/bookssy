@@ -32,4 +32,8 @@ input,button{
   outline: 0;
 }
 
+/* Hide scrollbar by calling .element */
+.element::-webkit-scrollbar {
+  display: none;
+}
 
