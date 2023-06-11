@@ -8,8 +8,8 @@ export default function Salondetails() {
 
     return (
         <>
-   {state.id} <br /> {state.name}name not showing  <br/> {state.address} <br /> {state.ratings} <br /> {state.reviews} {state.aboutUs} 
-   <img src={state.images} alt="" />
+   {state.id} <br /> {state.name}dff <br/> {state.address} <br /> {state.ratings} <br /> {state.reviews} {state.aboutUs} 
+   <img src={state.images[0]} alt="" />
         </>
     );
 }
