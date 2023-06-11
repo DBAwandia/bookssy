@@ -26,7 +26,9 @@ export default function Salondetails() {
 
         <aside className="sticky h-screen w-[30%] ">
             <div>
-                
+                {/* <div className="rounded shadow-md w-full">
+                    <p className="text-nowrap"> Want to make a present? Order a Gift Card!</p>
+                </div> */}
             </div>
         </aside>
       </main>
