@@ -74,14 +74,14 @@ export default function Footer() {
           <img
             src={AppStore}
             alt="Download From App Store"
-            className="w-[50px] h-[20px] lg:w-[80px] lg:h-[45px] "
+            className="w-[80px] h-[30px] md:h-[45px] "
             // style={{ width: 150, height: 150 }}
           />
 
           <img
             src={PlayStore}
             alt="Download From App Store"
-            className="w-[50px] h-[20px] lg:w-[70px] lg:h-[40px] "
+            className="w-[80px] h-[30px] md:h-[45px] "
 
           />
         </div>

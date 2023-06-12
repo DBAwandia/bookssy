@@ -1,4 +1,4 @@
-// import Footer from "../../../components/Footer"
+import Footer from "../../../components/Footer"
 import HeroBottom from "../../../components/HomeComponents/HeroBottom"
 import Navbar from "../../../components/Navbar"
 import HairSalonCustomerReviews from "./HairSalonCustomerReviews"
@@ -70,7 +70,7 @@ function ChooseHairSalon() {
 
         {/* FOOTER*/}
       <div>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
 
 

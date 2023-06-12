@@ -75,6 +75,30 @@ export const hairSalonMoreDescriptionData =[
         }
 ]
 
+// barberShop more description dummy data
+export const barberShopMoreDescriptionData =[
+        {
+                title: "What services do barber shops offer ?",
+                description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+        },
+        {
+                title: "How do you prepare for barbershop appointment ?",
+                description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+        },
+        {
+                title: "How to find best barber shop ?",
+                description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+        },
+        {
+                title: "How to know which hairstyle to get ?",
+                description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+        },
+        {
+                title: "How will i pay for a visit in a barbershop ?",
+                description: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+        }
+]
+
 
 // Hairsalon cities 
 export const hairSalonCustomerReviewData = [
@@ -166,6 +190,50 @@ export const hairSalonCities = [
         {
                 id: 10,
                 name: "Hair salon Columbus"
+        },
+    ]
+
+    // barberShops cities 
+export const barberShopsCities = [
+        {
+                id: 1,
+                name: "Barber shop in in San Diego"
+        },
+        {
+                id: 2,
+                name: "Barber shop in Dallas"
+        },
+        {
+                id: 3,
+                name: "Barber shop in Texas"
+        },
+        {
+                id: 4,
+                name: "Barber shop in San Jose"
+        },
+        {
+                id: 5,
+                name: "Barber shop in Philadelphia"
+        },
+        {
+                id: 6,
+                name: "Barber shop in New york"
+        },
+        {
+                id: 7,
+                name: "Barber shop in Austin"
+        },
+        {
+                id: 8,
+                name: "Barber shop in Atlanta"
+        },
+        {
+                id: 9,
+                name: "Barber shop in Houston"
+        },
+        {
+                id: 10,
+                name: "Barber shop in Columbus"
         },
     ]
     

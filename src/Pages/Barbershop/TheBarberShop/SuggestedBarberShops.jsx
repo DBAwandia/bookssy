@@ -1,16 +1,14 @@
 import { useState , useEffect } from 'react'
 import { salonJson  } from '../../../assets/Dummydata/Dummydata'
-import SalonShopService from './SalonShopService'
 import { IoMdThumbsUp } from "react-icons/io"
 import { BsArrowRight, BsSliders } from "react-icons/bs"
-
 import ReactPaginate from 'react-paginate';
 import "./Paginate.css"
 import { RiArrowDownSLine } from 'react-icons/ri'
-
 import { useNavigate } from 'react-router-dom'
+import BarberShopServices from './BarberShopServices';
 
-function SuggestionSalons() {
+function SuggestedBarberShops() {
 
     
     // Here we use item offsets; we could also use page offsets
@@ -90,10 +88,9 @@ function SuggestionSalons() {
                {/* SALON SHOP IMAGE */}
                 <div
                     className='relative w-[100%] lg:w-[32%] lg:min-h-[40vh] cursor-pointer'
-                    onClick={() => {
-                        handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
-                    }}
-                >
+                onClick={() => {
+                    handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
+                }}>
                         <img 
                             className="w-[100%] h-[15rem] md:h-[25rem] lg:h-[15rem] lg:rounded-2xl rounded-lg object-cover"   
                             src={item.images.length > 1 ? item?.images[0] : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eEqxqteZ-yqR2AC-W6vv7mY6e4A8cclnkw&usqp=CAU"}
@@ -157,7 +154,7 @@ function SuggestionSalons() {
                         <div 
                             className='w-full'
                         >
-                            <SalonShopService />
+                            <BarberShopServices />
                         </div>
 
                     </div>
@@ -197,4 +194,4 @@ function SuggestionSalons() {
   )
 }
 
-export default SuggestionSalons
+export default SuggestedBarberShops

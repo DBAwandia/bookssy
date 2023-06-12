@@ -4,6 +4,8 @@ import Home from "./components/HomeComponents/Home";
 import HairSalonShop from "./Pages/Hairsalon/Hairsalonshop/HairSalonShop"
 import ChooseHairSalon from "./Pages/Hairsalon/ChooseHairsalonLocation/ChooseHairSalon";
 import Salondetails from "./Pages/Hairsalon/Hairsalonshop/Salondetails";
+import BarberShop from "./Pages/Barbershop/TheBarberShop/BarberShop";
+import ChooseBarberShop from "./Pages/Barbershop/ChooseBarberShop/ChooseBarberShop";
 
 function App() {
   return (
@@ -11,24 +13,40 @@ function App() {
      <Router>
       <Routes>
 
+        {/* home page */}
         <Route 
           path="/"
           element={<Home/>}
         />
         
+        {/* salon shops page for each loaction / city */}
         <Route 
           path="/salonshops"
           element={<HairSalonShop/>}
         />
 
+        {/* salonshop page if location / city is not choosen by user */}
         <Route 
           path="/choosesalon"
           element={<ChooseHairSalon/>}
         />
 
+        {/* more details of a salon shop when clicked by user and wants its services */}
         <Route 
-        path ="/salondetails/:id" 
-        element={<Salondetails/>} 
+          path ="/salondetails/:id" 
+          element={<Salondetails/>} 
+        />
+
+        {/* salon shops page for each loaction / city */}
+        <Route 
+          path="/barbershops"
+          element={<BarberShop/>}
+        />
+
+        {/* salonshop page if location / city is not choosen by user */}
+        <Route 
+          path="/choosebarbershop"
+          element={<ChooseBarberShop/>}
         />
 
       </Routes>

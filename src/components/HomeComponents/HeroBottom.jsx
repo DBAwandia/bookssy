@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const links = [
   { name: "HairSalon", link: "/choosesalon" },
-  { name: "Barbershop", link: "" },
+  { name: "Barbershop", link: "/choosebarbershop" },
   { name: "NailSalon", link: "" },
   { name: "SkinCare", link: "" },
   { name: "Eyebrows&Lashes", link: "" },
