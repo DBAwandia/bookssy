@@ -37,28 +37,33 @@ const settings = {
 
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
+    breakpoint: 1024,
+    settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
-      },
+        autoplay: true,
+        arrows: false
+
+    },
     },
     {
-      breakpoint: 600,
-      settings: {
+    breakpoint: 600,
+    settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
-      },
+        autoplay: true,
+        arrows: false
     },
-  ],
+    },
+],
 };
 
 export default function BlogRecommended() {
   return (
-    <section className="w-full p-10">
-      <h2 className="text-2xl font-bold text-booksyGray">
+    <section className="w-full lg:p-10 p-3">
+      <h2 className="lg:text-2xl text-[1rem] font-bold text-booksyGray">
         Recommended For You
       </h2>
       <div className="my-5">

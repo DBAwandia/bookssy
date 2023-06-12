@@ -37,29 +37,34 @@ const settings = {
 
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
+    breakpoint: 1024,
+    settings: {
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
-      },
+        autoplay: true,
+        arrows: false
+
+    },
     },
     {
-      breakpoint: 600,
-      settings: {
+    breakpoint: 600,
+    settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
-      },
+        autoplay: true,
+        arrows: false
     },
-  ],
+    },
+],
 };
 
 export default function GetInspired() {
   return (
     <section className="w-full p-10">
-      <div className="w-full bg-[#f5f5f5] rounded-xl py-10">
-        <h1 className="text-4xl font-semibold text-booksyGray text-center">
+      <div className="w-full bg-[#f5f5f5] rounded-xl lg:py-10 p-3">
+        <h1 className="lg:text-4xl text-[1.5rem] font-semibold text-booksyGray text-center">
           Get inspired with Booksy
         </h1>
         <p className="text-booksyGray text-center my-2">

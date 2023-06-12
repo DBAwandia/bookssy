@@ -7,7 +7,7 @@ import SomethingCameUp from "../../assets/SomethingCameUp.png";
 
 export default function SpecsContent() {
   return (
-    <section className="w-full py-10 px-20">
+    <section className="w-full grid grid-cols-1 gap-4 py-10 lg:px-20 px-3">
       <TextAndImages
         title={"Appointments done better"}
         text1={

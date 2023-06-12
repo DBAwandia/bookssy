@@ -10,12 +10,12 @@ export default function TextAndImages({
 }) {
   return (
     <div
-      className={`w-full gap-20 ${
-        reverse === true ? "flex flex-row-reverse" : "flex flex-row"
+      className={`w-full lg:gap-20 gap-5 ${
+        reverse === true ? "grid grid-cols-1 lg:flex lg:flex-row-reverse" : "grid grid-cols-1 lg:flex lg:flex-row"
       } justify-between items-center`}
     >
-      <div className="w-1/2 ">
-        <h1 className="text-4xl font-semibold text-booksyGray mb-10">
+      <div className="lg:w-1/2 w-full">
+        <h1 className="lg:text-4xl text-[1.2rem] font-semibold text-booksyGray mb-10">
           {title}
         </h1>
         <p className="my-2">{text1}</p>
@@ -23,8 +23,13 @@ export default function TextAndImages({
         <p className="my-2">{text3}</p>
       </div>
 
-      <div className="w-1/2 ">
-        <img src={image} alt={title} style={{ width: 400, height: 400 }} />
+      <div className="lg:w-1/2 w-full">
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-full h-auto object-cover"
+
+        />
       </div>
     </div>
   );

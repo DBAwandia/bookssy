@@ -25,7 +25,7 @@ export default function HeroMiddle() {
         />
       </h1>
 
-      <p className="text-booksyWhite font-normal text-xl text-center py-4 tracking-wide">
+      <p className="text-booksyWhite font-normal lg:text-xl text-[1rem] text-center py-4 tracking-wide">
         Discover and book beauty & wellness professionals near you
       </p>
 

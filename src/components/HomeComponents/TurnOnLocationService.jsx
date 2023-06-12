@@ -3,11 +3,11 @@ import { ICONSIMAGES } from "../../../utitlities/iconsAndImages";
 
 export default function TurnOnLocationService() {
   return (
-    <section className="w-full p-10">
-      <div className="bg-booksyWhite rounded-lg shadow-2xl p-10 w-full flex flex-row gap-5 items-center">
+    <section className="w-full lg:p-10 p-3">
+      <div className="bg-booksyWhite rounded-lg shadow-2xl p-10  w-full flex flex-row gap-5 items-center">
         {/* Details */}
-        <div className=" w-2/3">
-          <h2 className="text-2xl font-bold text-booksyGray">
+        <div className=" w-full lg:w-2/3">
+          <h2 className="lg:text-2xl text-center text-[1rem] font-bold text-booksyGray">
             Turn on location services
           </h2>
           <p className="text-[0.85rem] text-booksyGray my-5">
@@ -15,12 +15,12 @@ export default function TurnOnLocationService() {
             so we can show you what's nearby.
           </p>
 
-          <div className="flex flex-row gap-5">
-            <button className="bg-booksyGreen text-booksyWhite font-semibold uppercase text-[0.9rem] py-3 px-4 rounded-lg">
+          <div className="w-full grid grid-cols-1 lg:flex lg:flex-row gap-5">
+            <button className="w-full bg-booksyGreen text-booksyWhite font-semibold uppercase text-[0.9rem] py-3 px-4 rounded-lg">
               SEARCH NEAR ME
             </button>
 
-            <button className="bg-booksyWhite text-booksyGreen border border-booksyGreen font-semibold uppercase text-[0.9rem] py-3 px-4 rounded-lg">
+            <button className="w-full border-2 bg-booksyWhite text-[#00a3ad] border-booksyGreen font-semibold uppercase text-[0.9rem] py-3 px-4 rounded-lg">
               NOT NOW
             </button>
           </div>
@@ -29,6 +29,7 @@ export default function TurnOnLocationService() {
         {/* Image */}
         <img
           src={ICONSIMAGES.PhoneLocation}
+          className="hidden lg:block"
           style={{ width: 300, height: 300 }}
         />
       </div>

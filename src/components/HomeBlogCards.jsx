@@ -3,8 +3,8 @@ import React from "react";
 export default function HomeBlogCards({ title, image }) {
   return (
     <>
-      <section className="px-2">
-        <div className="w-full rounded-xl bg-booksyWhite shadow-lg">
+      <section className="lg:px-2">
+        <div className="w-full lg:rounded-xl rounded-lg bg-booksyWhite shadow-lg">
           <div className="">
             <img
               src={image}
