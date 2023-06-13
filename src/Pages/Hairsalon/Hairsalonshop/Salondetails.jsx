@@ -41,7 +41,7 @@ export default function Salondetails() {
           <br />
           <PopularSdetails />
         </aside>
-
+<hr className=""/>
         <aside className="sticky h-screen lg:w-[30%] top-2 w-full">
           <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
