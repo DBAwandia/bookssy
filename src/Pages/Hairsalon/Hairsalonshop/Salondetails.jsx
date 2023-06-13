@@ -43,12 +43,12 @@ export default function Salondetails() {
         </aside>
 
         <aside className="sticky h-screen lg:w-[30%] top-2 w-full">
-          <div className="rounded shadow-md w-full">
+          <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
               {" "}
               Want to make a present? Order a Gift Card!
             </p>
-            <button className="text-white bg-[#00a3ad]">Show Gift Cards</button>
+            <button className="text-white bg-[#00a3ad] w-full text-center mt-2 py-2 rounded-xl">Show Gift Cards</button>
           </div>
         </aside>
       </main>
