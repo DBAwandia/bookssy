@@ -8,12 +8,32 @@ export default function PopularSdetails() {
         setShowProduct(!showProduct);
     }
     const [showExtension, setShowExtension] = useState(false);
+    const [shownatural, setShownatural] = useState(false);
+    const [showbasicloc, setShowbasicloc] = useState(false);
+    const [showclasses, setShowclasses] = useState(false);
+    const [showwick, setShowwick] = useState(false);
+    const [showsisterloc, setShowsisterloc] = useState(false);
 
     function handleshowlocS() {
         setShowlocS(!showlocS);
     }
     function handleshowExtension() {
         setShowExtension(!showExtension);
+    }
+    function handleshownatural() {
+        setShownatural(!shownatural);
+    }
+    function handleshowbasicloc() {
+        setShowbasicloc(!showbasicloc);
+    }
+    function handleshowclasses() {
+        setShowclasses(!showclasses);
+    }
+    function handleshowwick() {
+        setShowwick(!showwick);
+    }
+    function handleshowsisterloc() {
+        setShowsisterloc(!showsisterloc);
     }
 
   return (
@@ -57,31 +77,77 @@ export default function PopularSdetails() {
       </div>)}
       {/* !!!!!!!!!!!!!!!!!!! */}
       <br />
+      {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
+            <div  onClick={handleshownatural}>
+        <h2 className="text-xl font-bold">
+            <span>
+            {shownatural ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+        </span> {"  "}
+        Natural Hair </h2>
+      </div>
+      {shownatural && (
+      <div>
+        <SalonShopService />
+      </div>)}
+      {/* !!!!!!!!!!!!!!!!!!! */}
+      <br />
+      {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
+            <div  onClick={handleshowbasicloc}>
+        <h2 className="text-xl font-bold">
+            <span>
+            {showbasicloc ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+        </span> {"  "}
+    Basic Loc Services </h2>
+      </div>
+      {showbasicloc && (
+      <div>
+        <SalonShopService />
+      </div>)}
+      {/* !!!!!!!!!!!!!!!!!!! */}
+      <br />
+      {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
+            <div  onClick={handleshowwick}>
+        <h2 className="text-xl font-bold">
+            <span>
+            {showwick ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+        </span> {"  "}
+        Wick </h2>
+      </div>
+      {showwick && (
+      <div>
+        <SalonShopService />
+      </div>)}
+      {/* !!!!!!!!!!!!!!!!!!! */}
+      <br />
+            {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
+            <div  onClick={handleshowsisterloc}>
+        <h2 className="text-xl font-bold">
+            <span>
+            {showsisterloc ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+        </span> {"  "}
+        Sister Locs </h2>
+      </div>
+      {showsisterloc && (
+      <div>
+        <SalonShopService />
+      </div>)}
+      {/* !!!!!!!!!!!!!!!!!!! */}
+      <br />
     </main>
   );
 }
     
-    // const [shownatural, setShownatural] = useState(false);
-    // const [showbasicloc, setShowbasicloc] = useState(false);
-    // const [showclasses, setShowclasses] = useState(false);
-    // const [showwick, setShowwick] = useState(false);
-    // const [showsisterloc, setShowsisterloc] = useState(false);
+    
+    
+    
+    
+    
 
 
-    // function handleshownatural() {
-    //     setShownatural(!shownatural);
-    // }
-    // function handleshowbasicloc() {
-    //     setShowbasicloc(!showbasicloc);
-    // }
-    // function handleshowclasses() {
-    //     setShowclasses(!showclasses);
-    // }
-    // function handleshowwick() {
-    //     setShowwick(!showwick);
-    // }
-    // function handleshowsisterloc() {
-    //     setShowsisterloc(!showsisterloc);
-    // }
+ 
+    
+    
+    
+    
 
 

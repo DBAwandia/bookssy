@@ -15,7 +15,7 @@ export default function Salondetails() {
         <Navbar />
       </div>
       {/* main tag for salon details  */}
-      <main className="pt-9 px-4 flex gap-[5%]">
+      <main className="pt-9 px-8 flex gap-[5%]">
         <aside className="w-[65%]">
           {/* image slides */}
           <SalonDimage
