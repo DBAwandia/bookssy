@@ -1,3 +1,4 @@
+import Footbar from "../../../components/Footbar"
 import Footer from "../../../components/Footer"
 import HeroBottom from "../../../components/HomeComponents/HeroBottom"
 import Navbar from "../../../components/Navbar"
@@ -8,7 +9,7 @@ import BarberShopMoreDescription from "./BarberShopMoreDescription"
 function ChooseBarberShop() {
   return (
     <div
-      className="flex flex-col"
+      className="relative flex flex-col"
     >
       {/* NAVBAR*/}
       <div className='bg-[#1b1d21] h-[4rem] lg:px-[2rem] pt-[1rem]'>
@@ -73,9 +74,14 @@ function ChooseBarberShop() {
       <div>
         <Footer/>
       </div>
-
-
       </div>
+
+      <div 
+        className='w-full z-[9999999999999] lg:hidden fixed bottom-0 right-0'
+      >
+        <Footbar/>
+      </div>
+
     </div>
   )
 }
