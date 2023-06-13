@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineHeart , AiFillHeart } from "react-icons/ai"
 import { BsArrowRight , BsArrowLeft } from "react-icons/bs"
 import { salonJson } from "../../../assets/Dummydata/Dummydata"
+import { useNavigate } from 'react-router-dom';
 
 function HairSalonSliderCategories() {
 
@@ -62,6 +63,12 @@ function HairSalonSliderCategories() {
             },
         ],
       };
+        // navigte to page details
+    const navigate = useNavigate()
+    function handleNavigatePage(id, images, address, ratings, reviews, aboutUs, name) {
+        window.scrollTo(0, 0)
+        navigate(`/salondetails/${id}`, {state: {id: id, images: images, address: address, ratings: ratings, reviews: reviews, aboutUs: aboutUs, name: name}})
+    }
 
   return (
     <div 
@@ -99,7 +106,10 @@ function HairSalonSliderCategories() {
                     >
                     <div className='lg:w-[90%] w-full relative'>
                             <img 
-                                className="w-[100%] h-[14rem] md:rounded-lg rounded-md object-cover"   
+                            onClick={() => {
+                        handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
+                    }}
+                                className="w-[100%] h-[14rem] md:rounded-lg rounded-md object-cover cursor-pointer"   
                                 src={item.images[0]}
                                 alt="image"
                             />
@@ -126,7 +136,10 @@ function HairSalonSliderCategories() {
                                 className="w-full flex flex-col gap-[1rem]"
                             >
                                 <p
-                                    className="text-[#222324] md:text-[1.2rem] text-[1rem] mt-[1.5rem] font-[650]"
+                                onClick={() => {
+                        handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
+                    }}
+                                    className="text-[#222324] md:text-[1.2rem] text-[1rem] mt-[1.5rem] font-[650] cursor-pointer"
                                     >
                                     {item.name}
                                 </p>
