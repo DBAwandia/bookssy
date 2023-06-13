@@ -33,7 +33,7 @@ export default function Navbar() {
       </div>
 
       {/* OTHERS */}
-      <div className="hidden lg:block lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
+      <div className="hidden  lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
         {/* login */}
         <div className="flex gap-2 items-center">
           <HiOutlineUserCircle size={35} />
