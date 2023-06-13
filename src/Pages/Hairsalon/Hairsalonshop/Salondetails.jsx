@@ -15,8 +15,8 @@ export default function Salondetails() {
         <Navbar />
       </div>
       {/* main tag for salon details  */}
-      <main className="pt-9 px-8 flex gap-[5%]">
-        <aside className="w-[65%]">
+      <main className="pt-9 lg:px-8 px-5 lg:flex gap-[5%]">
+        <aside className="lg:w-[65%] w-full">
           {/* image slides */}
           <SalonDimage
             images={state.images}
@@ -42,11 +42,13 @@ export default function Salondetails() {
           <PopularSdetails />
         </aside>
 
-        <aside className="sticky h-screen w-[30%] ">
-          <div>
-            {/* <div className="rounded shadow-md w-full">
-                    <p className="text-nowrap"> Want to make a present? Order a Gift Card!</p>
-                </div> */}
+        <aside className="sticky h-screen lg:w-[30%] top-2 w-full">
+          <div className="rounded shadow-md w-full">
+            <p className="text-center text-base">
+              {" "}
+              Want to make a present? Order a Gift Card!
+            </p>
+            <button className="text-white bg-[#00a3ad]">Show Gift Cards</button>
           </div>
         </aside>
       </main>
