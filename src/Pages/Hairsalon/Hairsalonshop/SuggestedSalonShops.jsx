@@ -38,9 +38,9 @@ function SuggestionSalons() {
 
     // navigte to page details
     const navigate = useNavigate()
-    function handleNavigatePage(id, images, address, ratings, reviews, aboutUs, name) {
+    function handleNavigatePage(id) {
         window.scrollTo(0, 0)
-        navigate(`/salondetails/${id}`, {state: {id: id, images: images, address: address, ratings: ratings, reviews: reviews, aboutUs: aboutUs, name: name}})
+        navigate(`/salondetails/${id}`)
     }
   return (
     <div 
@@ -142,7 +142,7 @@ function SuggestionSalons() {
                             <h1
                                 className='text-[#484848] font-bold text-[1.1rem] cursor-pointer'
                                 onClick={() => {
-                                    handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
+                                    handleNavigatePage(item.id)
                                 }}
                             >
                                 {item.name}
