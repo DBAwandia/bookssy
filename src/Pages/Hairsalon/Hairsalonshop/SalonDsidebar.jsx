@@ -32,14 +32,14 @@ export default function SalonDsidebar(props) {
         <p className='mb-6 text-gray-600 text-xs'>{props.aboutUs}</p>
         <h2 className=' font-sans font-semibold text-sm uppercase'>Staffers</h2>
         <br />
-        <div className='flex justify-between px-1'>
+        <div className='flex justify-center px-1 gap-10'>
             <div>
-            <div><i className="fa-regular fa-user"></i></div>
-            <p>Luticia </p>
+            <div className=' shadow-2xl p-5 rounded-full'><i className="fa-regular fa-user text-2xl"></i></div>
+            <p className='text-center mt-2'>Luticia </p>
             </div>
             <div>
-            <div><i className="fa-regular fa-user"></i></div>
-            <p>Michelle</p>
+            <div className=' shadow-2xl p-5 rounded-full'><i className="fa-regular fa-user text-2xl"></i></div>
+            <p className='text-center mt-2'>Michelle</p>
             </div>
         </div>
     </div>

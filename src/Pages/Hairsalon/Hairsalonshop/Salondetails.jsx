@@ -52,7 +52,7 @@ export default function Salondetails() {
           <PopularSdetails />
         </aside>
         <hr className="" />
-        <aside className=" lg:w-[30%] w-full">
+        <aside className=" lg:w-[30%] w-full bg-[#fafafa]">
           <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
               {" "}
