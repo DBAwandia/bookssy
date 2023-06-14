@@ -4,7 +4,7 @@ export default function SalonDimage(props) {
   return (
     <>
       <main className="relative w-50%">
-        <img src={props.images && props.images[1]} alt="img" className="w-full object-contain"/>
+        <img src={props.images && props.images[0]} alt="img" className="w-full object-contain"/>
         <div className="absolute md:left-[1rem] left-[1rem] md:top-[0.5rem] top-[0.5rem] rounded-md md:text-[0.7rem] text-[0.5rem] font-[590] flex items-center gap-[0.3rem] w-auto px-[0.8rem] py-[0.5rem] bg-white text-[#161718]">
           <IoMdThumbsUp className="text-[1rem] text-[black]" />
           <p>BOOKSY RECOMMENDED</p>
