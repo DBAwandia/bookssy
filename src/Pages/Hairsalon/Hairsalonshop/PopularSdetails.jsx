@@ -210,14 +210,6 @@ export default function PopularSdetails() {
           </li>
         </ul>
       </div>
-      <br />
-      <div class="parent">
-        <div class="div1">sss </div>
-        <div class="div2">sss </div>
-        <div class="div3">sss </div>
-        <div class="div4">sss </div>
-        <div class="div5">sss </div>
-      </div>
     </main>
   );
 }

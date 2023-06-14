@@ -48,7 +48,7 @@ export default function Salondetails() {
             </span>
           </article>
           <br />
-          <PopularSdetails />
+          <PopularSdetails images={data.images}/>
         </aside>
         <hr className="" />
         <aside className="sticky lg:h-screen lg:w-[30%] top-2 w-full">
