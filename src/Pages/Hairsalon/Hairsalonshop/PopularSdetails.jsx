@@ -41,7 +41,7 @@ export default function PopularSdetails() {
       <div className="flex justify-between" onClick={handleshowProduct}>
         <h2 className="text-gray-600">Popular Services </h2>
         <span>
-            {showProduct ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+            {showProduct ? <i className="fa-solid fa-chevron-up text-gray-600 cursor-pointer"></i> : <i className="fa-solid fa-chevron-down text-gray-600 cursor-pointer"></i>}
         </span>
       </div>
       {showProduct && (
@@ -51,7 +51,7 @@ export default function PopularSdetails() {
       <br />
       {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshowlocS}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
             {showlocS ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
@@ -65,7 +65,7 @@ export default function PopularSdetails() {
     <br />
         {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshowExtension}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
             {showExtension ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
@@ -79,7 +79,7 @@ export default function PopularSdetails() {
       <br />
       {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshownatural}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
             {shownatural ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
@@ -93,9 +93,9 @@ export default function PopularSdetails() {
       <br />
       {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshowbasicloc}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
-            {showbasicloc ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
+            {showbasicloc ? <i className="fa-solid fa-chevron-up text-gray-600 "></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
     Basic Loc Services </h2>
       </div>
@@ -107,7 +107,7 @@ export default function PopularSdetails() {
       <br />
       {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshowwick}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
             {showwick ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
@@ -121,7 +121,7 @@ export default function PopularSdetails() {
       <br />
             {/* !!!!!!!!!!!!!!!!!!!!!!!! */}
             <div  onClick={handleshowsisterloc}>
-        <h2 className="text-xl font-bold">
+        <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
             <span>
             {showsisterloc ? <i className="fa-solid fa-chevron-up text-gray-600"></i> : <i className="fa-solid fa-chevron-down text-gray-600"></i>}
         </span> {"  "}
@@ -132,7 +132,20 @@ export default function PopularSdetails() {
         <SalonShopService />
       </div>)}
       {/* !!!!!!!!!!!!!!!!!!! */}
+      <hr />
       <br />
+      
+      <h2 className="uppercase text-sm md:text-base font-sans font-medium">Venue health and safety rules</h2>
+      <br />
+      <div>
+        <ul className="flex gap-5 flex-col md:flex-row md:justify-between flex-wrap md:gap-7">
+            <li className="font-sans text-sm text-[gray] md:w-[40%]  "><i className="fa-solid fa-shield-virus text-[#33b0c7]"></i>{"   "} Employee temperature checks</li>
+            <li className="font-sans text-sm text-[gray] md:w-[40%] "><i className="fa-solid fa-shield-virus text-[#33b0c7]"></i>{"   "} Disinfection between clients</li>
+            <li className="font-sans text-sm text-[gray] md:w-[40%] "><i className="fa-solid fa-shield-virus text-[#33b0c7]"></i>{"   "} Client temperature checks</li>
+            <li className="font-sans text-sm text-[gray] md:w-[40%] "><i className="fa-solid fa-shield-virus text-[#33b0c7]"></i>{"   "} Employee temperature masks</li>
+            <li className="font-sans text-sm text-[gray] md:w-[40%] "><i className="fa-solid fa-shield-virus text-[#33b0c7]"></i>{"   "} Contactless payment available</li>
+        </ul>
+      </div>
     </main>
   );
 }
