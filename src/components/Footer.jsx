@@ -57,7 +57,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <section className="w-full lg:p-10 p-3 bg-booksyGray">
+    <section className="w-full pb-[4rem] lg:pb-[0.5rem]  lg:p-10 p-3 bg-booksyGray">
       {/* Top */}
       <div className="flex flex-row w-full justify-between items-center">
         {/* links */}
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         {/* App Logos */}
-        <div className="lg:w-1/2 mt-[9rem] lg:mt-0 mr-[1rem] lg:mr-0 flex flex-row gap-5 justify-end items-center">
+        <div className="lg:w-1/2 mt-[9rem] lg:mt-0 flex flex-row gap-5 justify-end items-center">
           <img
             src={AppStore}
             alt="Download From App Store"

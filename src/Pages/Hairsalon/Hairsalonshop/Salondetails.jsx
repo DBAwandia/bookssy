@@ -7,7 +7,7 @@ import PopularSdetails from "./PopularSdetails";
 
 export default function Salondetails() {
   const location = useLocation();
-  const state = location.state;
+  const state = location?.state;
 
   return (
     <>
@@ -19,15 +19,15 @@ export default function Salondetails() {
         <aside className="lg:w-[65%] w-full">
           {/* image slides */}
           <SalonDimage
-            images={state.images}
-            ratings={state.ratings}
-            reviews={state.reviews}
+            images={state?.images}
+            ratings={state?.ratings}
+            reviews={state?.reviews}
           />
           <article className="mt-10">
             <h2 className="font-bold text-3xl font-serif text-zinc-700">
-              {state.name}
+              {state?.name}
             </h2>
-            <p className="font-serif text-xs text-zinc-600">{state.address}</p>
+            <p className="font-serif text-xs text-zinc-600">{state?.address}</p>
             <span className="flex mt-11 justify-between gap-2">
               <h2 className="text-3xl font-bold ">Services</h2>
               <input
