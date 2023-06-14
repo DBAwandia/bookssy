@@ -12,7 +12,7 @@ export default function SalonDsidebar(props) {
     return (
         <>
         <br />
-    <div style={{ height: '280px', width: '100%'}}>
+    <div style={{ height: '150px', width: '100%'}}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
@@ -26,9 +26,22 @@ export default function SalonDsidebar(props) {
       </GoogleMapReact>
     </div>
     <br />
-    <div>
-        <h2>About Us</h2>
-        <p>{props.aboutUs}</p>
+    <div className=''>
+        <h2 className=' font-sans font-semibold text-sm uppercase'>About Us</h2>
+        <br />
+        <p className='mb-6 text-gray-600 text-xs'>{props.aboutUs}</p>
+        <h2 className=' font-sans font-semibold text-sm uppercase'>Staffers</h2>
+        <br />
+        <div className='flex justify-between px-1'>
+            <div>
+            <div><i className="fa-regular fa-user"></i></div>
+            <p>Luticia </p>
+            </div>
+            <div>
+            <div><i className="fa-regular fa-user"></i></div>
+            <p>Michelle</p>
+            </div>
+        </div>
     </div>
         </>
     )

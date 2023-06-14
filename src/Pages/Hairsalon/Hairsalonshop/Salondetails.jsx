@@ -49,10 +49,10 @@ export default function Salondetails() {
             </span>
           </article>
           <br />
-          <PopularSdetails about/>
+          <PopularSdetails />
         </aside>
         <hr className="" />
-        <aside className=" lg:w-[30%] top-2 w-full">
+        <aside className=" lg:w-[30%] w-full">
           <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
               {" "}
