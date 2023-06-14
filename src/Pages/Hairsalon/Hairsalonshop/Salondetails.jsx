@@ -6,6 +6,7 @@ import Footer from "../../../components/Footer";
 import Footbar from "../../../components/Footbar";
 import PopularSdetails from "./PopularSdetails";
 import { salonJson } from "../../../assets/Dummydata/Dummydata";
+import SalonDsidebar from "./SalonDsidebar";
 
 export default function Salondetails() {
   const { id } = useParams();
@@ -61,6 +62,7 @@ export default function Salondetails() {
               Show Gift Cards
             </button>
           </div>
+          <SalonDsidebar/>
         </aside>
       </main>
       {/* FOOTER*/}
