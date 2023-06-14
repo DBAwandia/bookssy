@@ -33,7 +33,7 @@ export default function SalonDsidebar(props) {
         <h2 className=" font-sans font-semibold text-sm uppercase">Staffers</h2>
         <br />
         <hr />
-        <div className="flex justify-center px-1 gap-10">
+        <div className="flex  px-9 gap-10">
           <div>
             <div className=" shadow-2xl p-5 rounded-full">
               <i className="fa-regular fa-user text-2xl"></i>
@@ -102,7 +102,23 @@ export default function SalonDsidebar(props) {
         </ul>
         <br /><br />
         <h2 className=" font-sans font-semibold text-sm uppercase">Social media & share</h2>
+        <hr />
+        <div className="pt-7 flex justify-center gap-4">
+            <div >
+                <i class="fa-brands fa-instagram fa-spin  bg-[#c2c2c2] py-1 px-2 rounded-full text-2xl"></i>
+                <h2 className="text-center text-xs text-gray-500">Instagram</h2>
+            </div>
+            <div>
+                <i className="fa-solid fa-globe fa-spin bg-[#c2c2c2] py-1 px-2 rounded-full text-2xl"></i>
+                <h2 className="text-center text-xs text-gray-500">Website</h2>
+            </div>
+            <div>
+                <i className="fa-regular fa-share-from-square fa-flip bg-[#c2c2c2] py-1 px-2 rounded-full text-2xl"></i>
+                <h2 className="text-center text-xs text-gray-500">Share</h2>
+            </div>
+        </div>
       </div>
+      <br />
     </>
   );
 }
