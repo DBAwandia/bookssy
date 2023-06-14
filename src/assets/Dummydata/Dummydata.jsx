@@ -238,6 +238,51 @@ export const barberShopsCities = [
     ]
     
 
+
+// POPULAR SEARCHES
+export const popularSearches = [
+    {
+            id: 1,
+            name: "Braid"
+    },
+    {
+            id: 2,
+            name: "Hair"
+    },
+    {
+            id: 3,
+            name: "Trim"
+    },
+    {
+            id: 4,
+            name: "Wig"
+    },
+    {
+            id: 5,
+            name: "Haircut"
+    },
+    {
+            id: 6,
+            name: "Perm"
+    },
+    {
+            id: 7,
+            name: "Tattoo"
+    },
+    {
+            id: 8,
+            name: "Dye"
+    },
+    {
+            id: 9,
+            name: "Hair"
+    },
+    {
+            id: 10,
+            name: "Box braids"
+    },
+]
+
 // POPULAR TREATMENTS
 export const popularTreatMents = [
     {

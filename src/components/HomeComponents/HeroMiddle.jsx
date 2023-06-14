@@ -2,6 +2,7 @@
 import Typewriter from "typewriter-effect";
 import { CiSearch, CiLocationOn } from "react-icons/ci";
 import { BsSendFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function HeroMiddle() {
   return (
@@ -31,10 +32,12 @@ export default function HeroMiddle() {
 
       <div className="lg:px-64 px-[0.7rem] w-full flex flex-row justify-center lg:gap-[1px] gap-[0.4rem] lg:mt-3">
         {/* book your service */}
-        <div className="bg-transparent border-[0.6px] px-[1rem] lg:bg-booksyWhite h-12 w-full lg:w-1/2 lg:rounded-l-lg lg:rounded-r-[0px] rounded-lg flex flex-row gap-4 items-center lg:px-5 text-[#c2c2c2] cursor-pointer">
+        <Link className="w-full lg:w-1/2 " to="/search">
+        <div className="bg-transparent border-[0.6px] px-[1rem] lg:bg-booksyWhite h-12  lg:rounded-l-lg lg:rounded-r-[0px] rounded-lg flex flex-row gap-4 items-center lg:px-5 text-[#c2c2c2] cursor-pointer">
           <CiSearch size={20} />
           <p className="text-[0.9rem] font-medium">Book your services...</p>
         </div>
+        </Link>
 
         {/* search location */}
         <div className="hidden lg:block bg-booksyWhite h-12 w-1/2 rounded-r-lg lg:flex lg:flex-row gap-4 justify-between items-center px-5 text-[#c2c2c2] cursor-pointer">
