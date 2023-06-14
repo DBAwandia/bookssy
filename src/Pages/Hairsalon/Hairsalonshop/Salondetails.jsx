@@ -1,13 +1,23 @@
-import { useLocation } from "react-router-dom";
 import SalonDimage from "./SalonDImages";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import Footbar from "../../../components/Footbar";
 import PopularSdetails from "./PopularSdetails";
+import { salonJson } from "../../../assets/Dummydata/Dummydata";
+import SalonDsidebar from "./SalonDsidebar";
 
 export default function Salondetails() {
-  const location = useLocation();
-  const state = location?.state;
+  const { id } = useParams();
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const salonData = salonJson.find((_data) => String(_data.id) === id);
+    if (salonData) {
+      setData(salonData);
+    }
+  }, [id]);
 
   return (
     <>
@@ -19,15 +29,15 @@ export default function Salondetails() {
         <aside className="lg:w-[65%] w-full">
           {/* image slides */}
           <SalonDimage
-            images={state?.images}
-            ratings={state?.ratings}
-            reviews={state?.reviews}
+            images={data.images}
+            ratings={data.ratings}
+            reviews={data.reviews}
           />
           <article className="mt-10">
             <h2 className="font-bold text-3xl font-serif text-zinc-700">
-              {state?.name}
+              {data.name}
             </h2>
-            <p className="font-serif text-xs text-zinc-600">{state?.address}</p>
+            <p className="font-serif text-xs text-zinc-600">{data.address}</p>
             <span className="flex mt-11 justify-between gap-2">
               <h2 className="text-3xl font-bold ">Services</h2>
               <input
@@ -41,15 +51,18 @@ export default function Salondetails() {
           <br />
           <PopularSdetails />
         </aside>
-
-        <aside className="sticky h-screen lg:w-[30%] top-2 w-full">
+        <hr className="" />
+        <aside className=" lg:w-[30%] w-full bg-[#fafafa]">
           <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
               {" "}
               Want to make a present? Order a Gift Card!
             </p>
-            <button className="text-white bg-[#00a3ad] w-full text-center mt-2 py-2 rounded-xl">Show Gift Cards</button>
+            <button className="text-white bg-[#00a3ad] w-full text-center mt-2 py-2 rounded-xl">
+              Show Gift Cards
+            </button>
           </div>
+          <SalonDsidebar aboutUs={data.aboutUs}/>
         </aside>
       </main>
       {/* FOOTER*/}
@@ -62,5 +75,3 @@ export default function Salondetails() {
     </>
   );
 }
-//    {state.id} <br /> {state.name}dff <br/> {state.address} <br /> {state.ratings} <br /> {state.reviews} {state.aboutUs}
-//    <img src={state.images[0]} alt="" />
