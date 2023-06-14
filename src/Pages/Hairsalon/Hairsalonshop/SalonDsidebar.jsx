@@ -1,10 +1,11 @@
 import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-export default function SalonDsidebar() {
+
+export default function SalonDsidebar(props) {
     const defaultProps = {
     center: {
-    lat:  1.2864,
-    lng:   36.8172
+    lat:  40.650002,
+    lng: -73.949997
     },
     zoom: 11
 };
@@ -18,13 +19,17 @@ export default function SalonDsidebar() {
         defaultZoom={defaultProps.zoom}
       >
         <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
+          lat={40.650002}
+          lng={-73.949997}
           text="My Marker"
         />
       </GoogleMapReact>
     </div>
     <br />
+    <div>
+        <h2>About Us</h2>
+        <p>{props.aboutUs}</p>
+    </div>
         </>
     )
 }

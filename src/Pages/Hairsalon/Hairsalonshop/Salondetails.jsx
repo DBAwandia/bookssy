@@ -49,10 +49,10 @@ export default function Salondetails() {
             </span>
           </article>
           <br />
-          <PopularSdetails />
+          <PopularSdetails about/>
         </aside>
         <hr className="" />
-        <aside className="sticky lg:h-screen lg:w-[30%] top-2 w-full">
+        <aside className=" lg:w-[30%] top-2 w-full">
           <div className="rounded shadow-md w-full p-2">
             <p className="text-center text-base">
               {" "}
@@ -62,7 +62,7 @@ export default function Salondetails() {
               Show Gift Cards
             </button>
           </div>
-          <SalonDsidebar/>
+          <SalonDsidebar aboutUs={data.aboutUs}/>
         </aside>
       </main>
       {/* FOOTER*/}
