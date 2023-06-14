@@ -209,6 +209,30 @@ export default function PopularSdetails() {
             {"   "} Contactless payment available
           </li>
         </ul>
+        <br />
+      <h2 className="uppercase text-sm md:text-base font-sans font-medium">
+        Amenities
+      </h2>
+      <br />
+        <ul className="flex gap-5 flex-col md:flex-row md:justify-between flex-wrap md:gap-7">
+          <li className="font-sans text-sm text-[gray] md:w-[40%]  ">
+            <i className="fa-solid fa-car text-[#33b0c7]"></i>
+            {"   "} Parking space
+          </li>
+          <li className="font-sans text-sm text-[gray] md:w-[40%] ">
+            <i className="fa-solid fa-wifi text-[#33b0c7]"></i>
+            {"   "} Wi-Fi
+          </li>
+          <li className="font-sans text-sm text-[gray] md:w-[40%] ">
+            <i className="fa-brands fa-accessible-icon text-[#33b0c7]"></i>
+            {"   "} Accessible for people with disabilities
+          </li>
+          <li className="font-sans text-sm text-[gray] md:w-[40%] ">
+            <i className="fa-solid fa-hands-holding-child text-[#33b0c7]"></i>
+            {"   "} Child-friendly
+          </li>
+        </ul>
+        <br />
       </div>
     </main>
   );
