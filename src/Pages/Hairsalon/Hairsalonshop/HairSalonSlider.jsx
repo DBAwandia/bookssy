@@ -65,9 +65,9 @@ function HairSalonSliderCategories() {
       };
         // navigte to page details
     const navigate = useNavigate()
-    function handleNavigatePage(id, images, address, ratings, reviews, aboutUs, name) {
+    function handleNavigatePage(id) {
         window.scrollTo(0, 0)
-        navigate(`/salondetails/${id}`, {state: {id: id, images: images, address: address, ratings: ratings, reviews: reviews, aboutUs: aboutUs, name: name}})
+        navigate(`/salondetails/${id}`)
     }
 
   return (
@@ -107,7 +107,7 @@ function HairSalonSliderCategories() {
                     <div className='lg:w-[90%] w-full relative'>
                             <img 
                             onClick={() => {
-                        handleNavigatePage(item.id, item.images, item.address, item.ratings, item.reviews, item.aboutUs, item.name)
+                        handleNavigatePage(item.id)
                     }}
                                 className="w-[100%] h-[14rem] md:rounded-lg rounded-md object-cover cursor-pointer"   
                                 src={item.images[0]}

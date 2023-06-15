@@ -22,7 +22,7 @@ export default function HeroBottom() {
           key={index}
           className={`${
             index !== links.length - 1 &&
-            "lg:hover:underline items-center px-[1rem] lg:hover:decoration-white lg:hover:decoration-solid lg:hover:decoration-2 lg:hover:underline-offset-[18px]"
+            " items-center px-[1rem]  hover:border-b-[2px] hover:border-white hover:border-solid pb-[0.5rem]"
           }`}
         >
           {link.name}
