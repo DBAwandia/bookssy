@@ -1,20 +1,22 @@
+
 import React , { useContext } from 'react'
-import { BsArrowLeft } from 'react-icons/bs'
-import { popularSearches } from "../../assets/Dummydata/Dummydata"
+import { BsArrowLeft , BsSend } from 'react-icons/bs'
+import { popularLocations } from "../../assets/Dummydata/Dummydata"
 import {  useNavigate } from 'react-router-dom'
 import { SearchProductContext } from '../../Context/SearchProductContext'
 import 'animate.css';
+import { SearchLocationContext } from '../../Context/SearchLocationContext'
 
-function BooksySearchPage() {
-
-    const { dispatch } = useContext(SearchProductContext)
+function BooksyLocationSearchPage() {
+    //opening BooksyLocationSearchPage component
+    const { dispatchs } = useContext(SearchLocationContext)
 
     const navigate = useNavigate()
 
    
-    const CloseBooksySearchPage = () =>{
+    const CloseBooksyLocationPage = () =>{
         //close the BooksySearchPage component
-        dispatch({type:"CLOSE"})
+        dispatchs({type:"CLOSE"})
 
     }
 
@@ -22,7 +24,7 @@ function BooksySearchPage() {
     const handleSearch = () =>{
 
         //close the BooksySearchPage component first b4 navigating
-        dispatch({type:"CLOSE"})
+        dispatchs({type:"CLOSE"})
         navigate("/salonshops")
 
     }
@@ -33,14 +35,14 @@ function BooksySearchPage() {
     >
 
       <div
-        onClick={CloseBooksySearchPage}
+        onClick={CloseBooksyLocationPage}
         className='bg-[black] animate__animated animate__fadeIn  hidden opacity-[0.33] lg:block absolute top-0 right-0 bottom-0 w-full h-screen'
       >
         {/* close the BooksySearchPage component */}
       </div>
 
       <div
-        className='w-full lg:absolute top-[10%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[80%] lg:rounded-2xl bg-white lg:py-[2rem] h-full justify-between flex flex-col'
+        className='w-full min-h-full lg:absolute top-[10%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[80%] lg:rounded-2xl bg-white lg:py-[2rem] justify-between flex flex-col'
       >
         <div
             className='w-full flex flex-col'
@@ -53,30 +55,57 @@ function BooksySearchPage() {
                 >
                     {/* <Link to="/"> */}
                     <BsArrowLeft
-                        onClick={CloseBooksySearchPage}
+                        onClick={CloseBooksyLocationPage}
                         className='text-[1.4rem]'
                     />
                     {/* </Link> */}
                     <input
                         className='bg-transparent text-[#d6d6d6] placeholder-[#d6d6d6] border-transparent w-full pl-[1rem] py-[1rem] lg:py-[1rem] md:py-[1.5rem]'
                         type='text'
-                        placeholder='What are you looking for?'
+                        placeholder='Where?'
                     />
                 </div>
             </div>
+
+            {/* enable location near me */}
+            <div
+                className='hidden lg:block w-full py-[0.5rem] border-b-[0.6px]'
+            >
+                <div
+                    className='w-full flex items-center justify-between px-[1rem]'
+                >
+                    <div
+                        className='flex items-center gap-4'
+                    >
+                        <BsSend className='text-[1.4rem] text-[#c2c2c2]'/>
+                        <div>
+                            <p className='capitalize text-[#767676]'>Your current location</p>
+                            <span className='font-bold'>Unknown</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            className='uppercase px-[1.5rem] py-[0.7rem] bg-[#00a3ad] rounded-lg text-white font-semibold'
+                        >
+                            Search Near Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div
                 className='w-full py-[2rem] px-[1rem] flex flex-col gap-[1rem] md:gap-[2rem]'
             >
                 <p
-                    className='text-[0.95rem] font-bold text-[#999999]'
+                    className='uppercase text-[0.85rem] font-bold text-[#252525]'
                 >
-                    Popular services
+                    Looking for services elsewhere?
 
                 </p>
                 <div
                     className='w-full flex flex-wrap gap-[1rem] md:gap-[2rem] lg:gap-[1rem]'
                 >
-                    {popularSearches.map((item) =>
+                    {popularLocations.map((item) =>
                         <div
                             key={item.id}
                         >
@@ -105,4 +134,5 @@ function BooksySearchPage() {
   )
 }
 
-export default BooksySearchPage
+export default BooksyLocationSearchPage
+

@@ -1,5 +1,36 @@
+//POPULAR SERVICES
+export const popularLocations = [
+        {
+                id: 1,
+                name: "Nairobi "
+        },
+        {
+                id: 2,
+                name: "Kisumu "
+        },
+        {
+                id: 3,
+                name: "Nyeri "
+        },
+        {
+                id: 4,
+                name: "CBD , Nairobi "
+        },
+        {
+                id: 5,
+                name: "Eldoret "
+        },
+        {
+                id: 6,
+                name: "Kasarani "
+        },
+        {
+                id: 7,
+                name: "Nandi "
+        }
+    ]
 
-// POPULAR SERVICES
+//POPULAR SERVICES
 export const popularServices = [
         {
                 id: 1,
