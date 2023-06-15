@@ -27,13 +27,13 @@ export default function SalonDsidebar(props) {
       </div>
       <br />
       <div className="">
-        <h2 className=" font-sans font-semibold text-sm uppercase">About Us</h2>
+        <h2 className=" font-sans font-semibold text-sm uppercase select-none">About Us</h2>
         <br />
-        <p className="mb-6 text-gray-600 text-xs">{props.aboutUs}</p>
-        <h2 className=" font-sans font-semibold text-sm uppercase">Staffers</h2>
+        <p className="mb-6 text-gray-600 text-xs select-none">{props.aboutUs}</p>
+        <h2 className=" select-none font-sans font-semibold text-sm uppercase">Staffers</h2>
         <br />
         <hr />
-        <div className="flex  px-9 gap-10">
+        <div className="flex  px-9 gap-10 select-none">
           <div>
             <div className=" shadow-2xl p-5 rounded-full">
               <i className="fa-regular fa-user text-2xl"></i>
@@ -54,56 +54,58 @@ export default function SalonDsidebar(props) {
         </h2>
         <hr />
         <br />
-        <div className="flex justify-between px-1">
+        <div className="flex justify-between px-1 ">
           <div>
             <i className="fa-solid fa-phone fa-flip mt-4"></i>
             <span>(312) 685-2038</span>
           </div>
+          <a href="tel:3126852038">
           <div className="border py-2 px-5 rounded">
-            <a href="tel:3126852038">Call</a>
+            Call
           </div>
+          </a>
         </div>
         <br />
         <hr />
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Sunday</li>
           <li>10:00 AM - 04:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Monday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Tuesday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Wednesday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Thursday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Friday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br />
-        <ul className="flex justify-between px-1">
+        <ul className="flex justify-between px-1 select-none">
           <li>Saturday</li>
           <li>8:30 AM - 03:00 PM</li>
         </ul>
         <br /><br />
-        <h2 className=" font-sans font-semibold text-sm uppercase">Social media & share</h2>
+        <h2 className=" font-sans font-semibold text-sm uppercase select-none">Social media & share</h2>
         <hr />
-        <div className="pt-7 flex justify-center gap-4">
+        <div className="pt-7 flex justify-center gap-4 select-none">
             <div >
                 <i class="fa-brands fa-instagram fa-spin  bg-[#c2c2c2] py-1 px-2 rounded-full text-2xl"></i>
                 <h2 className="text-center text-xs text-gray-500">Instagram</h2>
