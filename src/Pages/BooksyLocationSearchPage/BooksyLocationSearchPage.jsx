@@ -36,7 +36,7 @@ function BooksyLocationSearchPage() {
 
       <div
         onClick={CloseBooksyLocationPage}
-        className='bg-[black] animate__animated animate__fadeIn  hidden opacity-[0.33] lg:block absolute top-0 right-0 bottom-0 w-full h-screen'
+        className='bgTransparent animate__animated animate__fadeIn  hidden lg:block absolute top-0 right-0 bottom-0 w-full h-screen'
       >
         {/* close the BooksySearchPage component */}
       </div>
