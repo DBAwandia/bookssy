@@ -9,6 +9,8 @@ import { BsArrowRight } from "react-icons/bs"
 import { SearchProductContext } from "../Context/SearchProductContext";
 import { SearchLocationContext } from "../Context/SearchLocationContext";
 import { MdCancel } from "react-icons/md"
+import { Popover } from '@headlessui/react'
+import Login from "../Pages/Login/Login";
 
 
 export default function Navbar() {
@@ -93,12 +95,20 @@ export default function Navbar() {
       {/* OTHERS */}
       <div className="hidden lg:flex items-center gap-[1rem] text-white">
         {/* login */}
+        <Popover className="relative">
+          <Popover.Button>
         <div className="flex gap-1 items-center">
           <HiOutlineUserCircle size={35} />
           <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
         </div>
+        </Popover.Button>
+        <Popover.Panel className="fixed z-50  w-[30%] bg-white text-black left-[35%] top-24 shadow-2xl" >
+          <Login/>
+        </Popover.Panel>
+        </Popover>
 
         {/* language */}
+        
         <div className="flex flex-row gap-1 items-center">
           <img
             src={FLAGS.usaFlag}
