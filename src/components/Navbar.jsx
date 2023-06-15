@@ -9,6 +9,8 @@ import { BsArrowRight } from "react-icons/bs"
 import { SearchProductContext } from "../Context/SearchProductContext";
 import { SearchLocationContext } from "../Context/SearchLocationContext";
 import { MdCancel } from "react-icons/md"
+import { Popover } from '@headlessui/react'
+
 
 
 export default function Navbar() {
@@ -99,6 +101,8 @@ export default function Navbar() {
         </div>
 
         {/* language */}
+        <Popover className="relative">
+           <Popover.Button>
         <div className="flex flex-row gap-1 items-center">
           <img
             src={FLAGS.usaFlag}
@@ -108,6 +112,11 @@ export default function Navbar() {
           <p className="text-[0.75rem] font-semibold">US</p>
           <BsChevronDown size={10} />
         </div>
+        </Popover.Button>
+        <Popover.Panel className="absolute z-10">
+          
+        </Popover.Panel>
+        </Popover>
 
         {/* list your business button */}
         <button className=" uppercase bg-white text-black text-[0.65rem] font-medium px-4 py-[0.5rem] rounded-sm md:rounded-lg">
