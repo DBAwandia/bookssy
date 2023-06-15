@@ -45,7 +45,3 @@ button{
   display: none;
 }
 
-/* ! slides dots */
-.slick-dots li button:before {
-  margin-top: -50px;
-}
