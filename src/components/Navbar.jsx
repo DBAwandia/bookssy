@@ -56,14 +56,14 @@ export default function Navbar() {
 
       {/* search navbar */}
       <div
-        className="lg:w-[auto] md:px-[2rem] px-[1rem] lg:px-[0px]  text-[#c2c2c2] text-[0.75rem] lg:border-[0.6px] border-[#cfcfcf] rounded-xl  py-[0.4rem] md:py-[0.6rem] lg:py-[0.4rem]"
+        className="lg:w-[auto] cursor-default md:px-[2rem] px-[1rem] lg:px-[0px]  text-[#c2c2c2] text-[0.75rem] lg:border-[0.6px] border-[#cfcfcf] rounded-xl  py-[0.4rem] md:py-[0.6rem] lg:py-[0.4rem]"
       >
         <div
           className="w-full grid grid-cols-1 lg:justify-between lg:flex lg:items-center gap-[1rem]"
         >
             <div
               onClick={openBooksySearchComponent}
-              className=" flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-sm md:rounded-lg lg:rounded-none lg:py-0 border-[0.6px] gap-1 lg:border-0 lg:border-r-[0.6px] border-[#cfcfcf]"
+              className=" flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-md md:rounded-lg lg:rounded-none lg:py-0 border-[0.6px] gap-1 lg:border-0 lg:border-r-[0.6px] border-[#cfcfcf]"
             >
               <AiOutlineSearch
                 className="text-[1.3rem]"
@@ -73,14 +73,14 @@ export default function Navbar() {
           <div className="w-full lg:w-auto gap-3 flex items-center">
             <div
               onClick={OpenBooksyLocationSearchComponent}
-              className="w-[50%] border-[0.6px] lg:border-0 lg:w-auto gap-[1.4rem] lg:rounded-none flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-sm md:rounded-lg lg:py-0 justify-between lg:border-r-[0.6px] border-[#cfcfcf]"
+              className="w-[50%] border-[0.6px] lg:border-0 lg:w-auto gap-[1.4rem] lg:rounded-none flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-md md:rounded-lg lg:py-0 justify-between lg:border-r-[0.6px] border-[#cfcfcf]"
             >
               {/* icon */}
               <p>Where?</p>
             </div>
             
             <div
-              className="w-[50%] border-[0.6px] lg:border-0 gap-[1.4rem] lg:rounded-none flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-sm md:rounded-lg lg:py-0 justify-between"
+              className="w-[50%] border-[0.6px] lg:border-0 gap-[1.4rem] lg:rounded-none flex items-center lg:px-[2rem] px-[0.4rem] md:px-[0.8rem] py-[0.4rem] md:py-[0.6rem] rounded-md md:rounded-lg lg:py-0 justify-between"
             >
               {/* icon */}
               <p>When?</p>
@@ -110,7 +110,7 @@ export default function Navbar() {
         </div>
 
         {/* list your business button */}
-        <button className=" uppercase bg-white text-black text-[0.65rem] font-medium px-4 py-[0.5rem] rounded-sm md:rounded-lg">
+        <button className=" uppercase bg-white text-black text-[0.65rem] font-medium px-4 py-[0.5rem] rounded-md md:rounded-lg">
           List your business
         </button>
       </div>

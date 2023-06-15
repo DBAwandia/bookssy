@@ -17,7 +17,7 @@ function BarberShopAroundYou() {
             className='flex flex-col gap-[2rem]'
         >
             <div
-                className='w-full grid gap-[2rem] grid-cols-1 md:grid-cols-3 text-[0.95rem]' 
+                className='w-full grid gap-[2rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-[0.95rem]' 
             >
                 {/* map popular treatment data from dummy json */}
                 {barberShopsCities.map(item =>

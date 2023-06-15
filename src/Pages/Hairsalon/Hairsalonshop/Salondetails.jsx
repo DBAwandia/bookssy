@@ -1,5 +1,5 @@
 import SalonDimage from "./SalonDImages";
-import { useState, useEffect } from "react";
+import { useState, useEffect , useContext } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -8,6 +8,10 @@ import PopularSdetails from "./PopularSdetails";
 import { salonJson } from "../../../assets/Dummydata/Dummydata";
 import SalonDsidebar from "./SalonDsidebar";
 import HeroBottom from '../../../components/HomeComponents/HeroBottom'
+import { SearchLocationContext } from "../../../Context/SearchLocationContext";
+import { SearchProductContext } from "../../../Context/SearchProductContext";
+import BooksyLocationSearchPage from "../../BooksyLocationSearchPage/BooksyLocationSearchPage";
+import BooksySearchPage from "../../BooksySearchpage/BooksySearchPage";
 
 
 export default function Salondetails() {
@@ -21,13 +25,19 @@ export default function Salondetails() {
     }
   }, [id]);
 
+    //opening BooksySearchPage component
+    const { open } = useContext(SearchProductContext)
+
+    //opening BooksyLocationSearchPage component
+    const { opens } = useContext(SearchLocationContext)
+
   return (
     <>
         <div
-        className="relative flex flex-col"
+        className="w-full overflow-x-hidden relative flex flex-col"
       >
         {/* NAVBAR*/}
-        <div className='bg-[#1b1d21] h-[4rem] md:px-[2rem] pt-[1rem]'>
+        <div className='bg-[#1b1d21] py-[0.6rem] pt-[1rem]'>
           <Navbar/>
         </div>
 
@@ -84,6 +94,25 @@ export default function Salondetails() {
       <div className="w-full z-[9999999999999] lg:hidden fixed bottom-0 right-0">
         <Footbar />
       </div>
+
+       {/* open the BooksySearchPage component */}
+    {open &&
+        <div 
+          className='w-full animate__animated animate__fadeIn h-screen z-[9999999999999] fixed bottom-0 top-0 left-0 right-0'
+        >
+          <BooksySearchPage/>
+        </div>
+      }
+
+      {/* open the BooksyLocationSearchPagee component */}
+      {opens &&
+        <div 
+          className='w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] '
+        >
+          <BooksyLocationSearchPage/>
+        </div>
+      }
+
     </>
   );
 }
