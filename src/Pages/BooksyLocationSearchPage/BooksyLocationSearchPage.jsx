@@ -31,7 +31,7 @@ function BooksyLocationSearchPage() {
     
   return (
     <div
-        className='relative h-screen w-full lg:flex lg:justify-center lg:items-center text-[0.95rem]'
+        className='relative h-screen lg:min-h-screen w-full lg:flex lg:justify-center lg:items-center text-[0.95rem]'
     >
 
       <div
@@ -42,7 +42,7 @@ function BooksyLocationSearchPage() {
       </div>
 
       <div
-        className='w-full min-h-full lg:absolute top-[10%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[80%] lg:rounded-2xl bg-white lg:py-[2rem] justify-between flex flex-col'
+        className='w-full lg:absolute top-[10%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[80%] lg:rounded-2xl bg-white lg:py-[2rem] h-full justify-between flex flex-col'
       >
         <div
             className='w-full flex flex-col'
