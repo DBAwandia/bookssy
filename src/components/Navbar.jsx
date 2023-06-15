@@ -8,7 +8,6 @@ import { Link } from "react-router-dom"
 import { BsArrowRight } from "react-icons/bs"
 import { SearchProductContext } from "../Context/SearchProductContext";
 import { SearchLocationContext } from "../Context/SearchLocationContext";
-import { MdCancel } from "react-icons/md"
 import { Popover } from '@headlessui/react'
 import Login from "../Pages/Login/Login";
 

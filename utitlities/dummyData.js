@@ -136,82 +136,37 @@ export const blogRecommend = [
 
 export const findCity = [
   {
+    id: 1,
     name: "Charlotte",
   },
 
   {
+    id: 2,
     name: "Tampa",
   },
 
   {
+    id: 3,
     name: "Miami",
   },
 
   {
+    id: 4,
     name: "Jacksonville",
   },
 
   {
+    id: 5,
     name: "Columbus",
   },
 
   {
+    id: 6,
     name: "San Antonio",
   },
 
   {
+    id: 7,
     name: "San Diego",
-  },
-
-  {
-    name: "Austin Texas",
-  },
-
-  {
-    name: "Philadelphia",
-  },
-
-  {
-    name: "Los Angeles",
-  },
-
-  {
-    name: "Washington",
-  },
-
-  {
-    name: "San Jose",
-  },
-
-  {
-    name: "Chicago",
-  },
-
-  {
-    name: "Dallas",
-  },
-
-  {
-    name: "New York",
-  },
-
-  {
-    name: "Houston",
-  },
-
-  {
-    name: "San Francisco",
-  },
-
-  {
-    name: "Orlando",
-  },
-
-  {
-    name: "Phoenix",
-  },
-
-  {
-    name: "Atlanta",
-  },
+  }
 ];

@@ -27,7 +27,7 @@ function MostPoularTreatments() {
             className='flex flex-col gap-[2rem]'
         >
             <div
-                className='w-full grid gap-[2rem] md:grid-cols-3 grid-cols-1 text-[0.95rem]' 
+                className='w-full grid gap-[2rem] md:grid-cols-2 grid-cols-1 lg:grid-cols-3 text-[0.95rem]' 
             >
                 {/* map popular treatment data from dummy json */}
                 {slicedArray.map(item =>

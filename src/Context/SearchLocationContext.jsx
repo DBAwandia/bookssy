@@ -1,7 +1,8 @@
-import { createContext , useReducer } from "react";
+import { createContext , useEffect, useReducer } from "react";
 
 const INITIAL_STATE ={
-    opens: false
+    opens: JSON.parse(localStorage.getItem("falseStates")) || false
+
 }
 
 export const SearchLocationContext = createContext(INITIAL_STATE)
@@ -24,6 +25,11 @@ const SearchLocationReducer = ( state , action ) =>{
 
 export const SearchLocationContextProvider = ( { children }) =>{
     const [ state , dispatchs ] = useReducer(SearchLocationReducer , INITIAL_STATE)
+
+    useEffect(()=>{
+        localStorage.setItem("falseStates" , state.opens)
+        
+    } ,[state.opens])
 
     return(
         <SearchLocationContext.Provider

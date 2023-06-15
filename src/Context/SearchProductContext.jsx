@@ -1,7 +1,7 @@
-import { createContext , useReducer } from "react";
+import { createContext , useEffect, useReducer } from "react";
 
 const INITIAL_STATE ={
-    open: false
+    open: JSON.parse(localStorage.getItem("falseState")) || false
 }
 
 export const SearchProductContext = createContext(INITIAL_STATE)
@@ -24,6 +24,11 @@ const SearchProductReducer = ( state , action ) =>{
 
 export const SearchProductContextProvider = ( { children }) =>{
     const [ state , dispatch ] = useReducer(SearchProductReducer , INITIAL_STATE)
+
+    useEffect(()=>{
+        localStorage.setItem("falseState" , state.open)
+        
+    } ,[state.open])
 
     return(
         <SearchProductContext.Provider

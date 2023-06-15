@@ -96,7 +96,7 @@ export default function Salondetails() {
       </div>
 
        {/* open the BooksySearchPage component */}
-    {open &&
+       {open &&
         <div 
           className='w-full animate__animated animate__fadeIn h-screen z-[9999999999999] fixed bottom-0 top-0 left-0 right-0'
         >
