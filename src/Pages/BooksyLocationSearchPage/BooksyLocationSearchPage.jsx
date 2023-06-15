@@ -3,7 +3,6 @@ import React , { useContext } from 'react'
 import { BsArrowLeft , BsSend } from 'react-icons/bs'
 import { popularLocations } from "../../assets/Dummydata/Dummydata"
 import {  useNavigate } from 'react-router-dom'
-import { SearchProductContext } from '../../Context/SearchProductContext'
 import 'animate.css';
 import { SearchLocationContext } from '../../Context/SearchLocationContext'
 
