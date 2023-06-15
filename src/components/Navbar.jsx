@@ -56,7 +56,7 @@ export default function Navbar() {
 
       {/* search navbar */}
       <div
-        className="lg:w-[auto] md:px-[2rem] px-[1rem] lg:px-[0px]  text-[#c2c2c2] text-[0.75rem] lg:border-[0.6px] border-[#cfcfcf] rounded-xl  py-[0.4rem] md:py-[0.6rem]"
+        className="lg:w-[auto] md:px-[2rem] px-[1rem] lg:px-[0px]  text-[#c2c2c2] text-[0.75rem] lg:border-[0.6px] border-[#cfcfcf] rounded-xl  py-[0.4rem] md:py-[0.6rem] lg:py-[0.4rem]"
       >
         <div
           className="w-full grid grid-cols-1 lg:justify-between lg:flex lg:items-center gap-[1rem]"
