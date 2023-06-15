@@ -65,7 +65,7 @@ export default function Salondetails() {
         </aside>
         <hr className="" />
         <aside className=" lg:w-[30%] w-full bg-[#fafafa]">
-          <div className="rounded shadow-md w-full p-2">
+          <div className="rounded shadow-md w-full p-2 select-none">
             <p className="text-center text-base">
               {" "}
               Want to make a present? Order a Gift Card!
