@@ -7,6 +7,8 @@ import Footbar from "../../../components/Footbar";
 import PopularSdetails from "./PopularSdetails";
 import { salonJson } from "../../../assets/Dummydata/Dummydata";
 import SalonDsidebar from "./SalonDsidebar";
+import HeroBottom from '../../../components/HomeComponents/HeroBottom'
+
 
 export default function Salondetails() {
   const { id } = useParams();
@@ -21,9 +23,19 @@ export default function Salondetails() {
 
   return (
     <>
-      <div className="bg-[#1b1d21] h-[4rem] md:px-[2rem] pt-[1rem]">
-        <Navbar />
-      </div>
+        <div
+        className="relative flex flex-col"
+      >
+        {/* NAVBAR*/}
+        <div className='bg-[#1b1d21] h-[4rem] md:px-[2rem] pt-[1rem]'>
+          <Navbar/>
+        </div>
+
+        {/* ALL SHOPS ( HAIRSALONSHOP , BARBESHOP , NAIL SHOP ... etc) */}
+        <div className='bg-[#1b1d21] lg:h-[5rem] h-[3.5rem] md:px-[2rem] pt-[1rem]' >
+          <HeroBottom/>
+        </div>
+  </div>
       {/* main tag for salon details  */}
       <main className="pt-9 lg:px-8 px-5 lg:flex gap-[5%]">
         <aside className="lg:w-[65%] w-full">

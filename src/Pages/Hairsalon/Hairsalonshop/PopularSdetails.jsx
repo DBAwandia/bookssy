@@ -59,9 +59,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {showlocS ? (
-              <i className="fa-solid fa-chevron-up text-gray-600"></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600"></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
@@ -80,9 +80,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {showExtension ? (
-              <i className="fa-solid fa-chevron-up text-gray-600"></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600"></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
@@ -101,9 +101,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {shownatural ? (
-              <i className="fa-solid fa-chevron-up text-gray-600"></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600"></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
@@ -122,9 +122,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {showbasicloc ? (
-              <i className="fa-solid fa-chevron-up text-gray-600 "></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600 "></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
@@ -143,9 +143,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {showwick ? (
-              <i className="fa-solid fa-chevron-up text-gray-600"></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600"></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
@@ -164,9 +164,9 @@ export default function PopularSdetails() {
         <h2 className="md:text-xl text-lg cursor-pointer  font-medium text-gray-600 font-serif">
           <span>
             {showsisterloc ? (
-              <i className="fa-solid fa-chevron-up text-gray-600"></i>
+              <i className="text-base fa-solid fa-chevron-up text-gray-600"></i>
             ) : (
-              <i className="fa-solid fa-chevron-down text-gray-600"></i>
+              <i className="fa-solid fa-chevron-right text-base text-gray-600"></i>
             )}
           </span>{" "}
           {"  "}
