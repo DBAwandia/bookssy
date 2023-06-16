@@ -106,7 +106,9 @@ function Hairsalon() {
         </div>
       }
 
-  </div>
+      
+
+    </div>
   )
 }
 

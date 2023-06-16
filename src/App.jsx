@@ -6,7 +6,7 @@ import ChooseHairSalon from "./Pages/Hairsalon/ChooseHairsalonLocation/ChooseHai
 import Salondetails from "./Pages/Hairsalon/Hairsalonshop/Salondetails";
 import BarberShop from "./Pages/Barbershop/TheBarberShop/BarberShop";
 import ChooseBarberShop from "./Pages/Barbershop/ChooseBarberShop/ChooseBarberShop";
-import BooksyLocationSearchPage from "./Pages/BooksyLocationSearchPage/BooksyLocationSearchPage";
+import BooksyDateSearch from "./Pages/BooksyDateSearch/BooksyDateSearch";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         {/* search for products */}
         <Route 
           path="/search"
-          element={<BooksyLocationSearchPage/>}
+          element={<BooksyDateSearch/>}
         />
         
         {/* salon shops page for each loaction / city */}
