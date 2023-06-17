@@ -5,12 +5,12 @@ export default function HomeBlogCards({ title, image }) {
     <>
       <section className="lg:px-2">
         <div className="w-full lg:rounded-xl rounded-lg bg-booksyWhite shadow-lg">
-          <div className="">
+          <div className="w-full relative">
             <img
               src={image}
               alt={title}
-              className="bg-cover rounded-t-xl"
-              style={{ objectFit: "cover" }}
+              className="object-cover rounded-t-xl w-[100%] h-[14rem] md:rounded-lg rounded-md cursor-pointer"
+              
             />
           </div>
 

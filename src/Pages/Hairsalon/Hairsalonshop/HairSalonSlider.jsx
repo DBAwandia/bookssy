@@ -107,8 +107,8 @@ function HairSalonSliderCategories() {
                     <div className='lg:w-[90%] w-full relative'>
                             <img 
                             onClick={() => {
-                        handleNavigatePage(item.id)
-                    }}
+                                handleNavigatePage(item.id)
+                            }}
                                 className="w-[100%] h-[14rem] md:rounded-lg rounded-md object-cover cursor-pointer"   
                                 src={item.images[0]}
                                 alt="image"
