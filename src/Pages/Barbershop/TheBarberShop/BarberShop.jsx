@@ -1,4 +1,3 @@
-import { useContext } from "react"
 import MostPoularTreatments from './MostPopularTreatments'
 import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
@@ -6,17 +5,8 @@ import HeroBottom from '../../../components/HomeComponents/HeroBottom'
 import BarberShopSlider from './BarberShopSlider'
 import SuggestedBarberShops from './SuggestedBarberShops'
 import Footbar from '../../../components/Footbar'
-import { SearchProductContext } from "../../../Context/SearchProductContext"
-import BooksySearchPage from "../../BooksySearchpage/BooksySearchPage"
-import BooksyLocationSearchPage from "../../BooksyLocationSearchPage/BooksyLocationSearchPage"
-import { SearchLocationContext } from "../../../Context/SearchLocationContext"
 
 function BarberShop() {
-  //opening BooksySearchPage component
-  const { open } = useContext(SearchProductContext)
-
-  //opening BooksyLocationSearchPage component
-  const { opens } = useContext(SearchLocationContext)
 
   return (
     <div
@@ -82,29 +72,10 @@ function BarberShop() {
     </div>
 
     <div 
-        className='w-full z-[9999999999999] lg:hidden fixed bottom-0 right-0'
+        className='w-full z-[99999] lg:hidden fixed bottom-0 right-0'
       >
         <Footbar/>
     </div>
-
-    {/* opne the BooksySearchPage component */}
-    {open &&
-        <div 
-          className='w-full animate__animated animate__fadeIn h-screen z-[9999999999999] fixed bottom-0 right-0'
-        >
-          <BooksySearchPage/>
-        </div>
-      }
-
-      {/* open the BooksyLocationSearchPage component */}
-      {opens &&
-        <div 
-          className='w-full animate__animated animate__fadeIn h-screen z-[9999999999999] fixed bottom-0 right-0'
-        >
-          <BooksyLocationSearchPage/>
-        </div>
-      }
-
   </div>
   )
 }

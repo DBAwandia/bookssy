@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BsArrowLeft } from 'react-icons/bs'
-import { popularLocations } from "../../assets/Dummydata/Dummydata"
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range';
@@ -8,9 +7,10 @@ import moment from 'moment';
 import { TfiAngleDown, TfiAngleUp } from "react-icons/tfi"
 // import {  useNavigate } from 'react-router-dom'
 import 'animate.css';
-import { Popover } from '@headlessui/react';
 
-function BooksyDateSearch({close}) {
+
+function BooksyDateSearch({ close , setOpenScroll }) {
+    //close prop from headless ui passed from navbar where its called
 
     const [ anytime , setAnyTime ] = useState("")
     const [ morning , setMorning ] = useState("")
@@ -38,7 +38,14 @@ function BooksyDateSearch({close}) {
     //anytime , evening , afternoon , morning change onClick
     const [ handleChange , setHandleChange ] = useState("")
 
+    //showMonth || less days
     const [open , setOpen ] = useState(false)
+
+    //close the Popover component and enable scroll
+    const handleClose = () =>{
+        setOpenScroll(false)
+        close()
+    }
     
     return (
       <div
@@ -46,15 +53,13 @@ function BooksyDateSearch({close}) {
     >
     
       <div
-        onClick={
-            close
-        }
+        onClick={handleClose}
         className='bgTransparent animate__animated animate__fadeIn hidden lg:block absolute top-0 right-0 bottom-0 w-full min-h-0'
         >
       </div>
     
       <div
-        className='w-full lg:absolute top-[5%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[1rem] justify-between flex flex-col gap-3 md:gap-6 lg:gap-3'
+        className='w-full h-screen lg:absolute top-[5%] left-[16%] z-[99999999999999999] lg:opacity-[0.88] lg:w-[70%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[1rem] justify-between flex flex-col gap-3 md:gap-6 lg:gap-3'
       >
         <div
             className='w-full flex flex-col gap-2'
@@ -68,7 +73,7 @@ function BooksyDateSearch({close}) {
                 >
                     {/* <Link to="/"> */}
                     <BsArrowLeft
-                        // onClick={CloseBooksyLocationPage}
+                        onClick={handleClose}
                         className='text-[1.4rem]'
                     />
                     {/* </Link> */}

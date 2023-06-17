@@ -73,7 +73,7 @@ function BarberShopSlider() {
                     {/* NEXT ARROW */}
                     <div
                         onClick={next}
-                        className="hidden lg:block absolute cursor-pointer self-center text-[1.2rem] right-[0rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer self-center text-[1.2rem] right-[0rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999]"
                     >
                         <BsArrowRight/>
                     </div>
@@ -81,7 +81,7 @@ function BarberShopSlider() {
                     {/* PREV ARROW */}
                     <div
                         onClick={previous}
-                        className="hidden lg:block absolute cursor-pointer text-[1.2rem] left-[-1.5rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999999999]"
+                        className="hidden lg:block absolute cursor-pointer text-[1.2rem] left-[-1.5rem] p-[1rem] top-[4rem] rounded-full w-[auto] text-[#222324] bg-[white] shadow-2xl z-[9999999]"
                     >
                         <BsArrowLeft/>
                     </div>

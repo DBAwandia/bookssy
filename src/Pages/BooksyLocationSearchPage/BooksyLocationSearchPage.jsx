@@ -1,31 +1,26 @@
 
-import React , { useContext } from 'react'
 import { BsArrowLeft , BsSend } from 'react-icons/bs'
 import { popularLocations } from "../../assets/Dummydata/Dummydata"
 import {  useNavigate } from 'react-router-dom'
 import 'animate.css';
-import { SearchLocationContext } from '../../Context/SearchLocationContext'
 
-function BooksyLocationSearchPage() {
-    //opening BooksyLocationSearchPage component
-    const { dispatchs } = useContext(SearchLocationContext)
+function BooksyLocationSearchPage({ close , setOpenScroll }) {
+    //close , setOpenScroll prop from headless ui passed from navbar where its called
 
     const navigate = useNavigate()
 
-   
-    const CloseBooksyLocationPage = () =>{
-        //close the BooksySearchPage component
-        dispatchs({type:"CLOSE"})
+    // search function
+    const handleSearch = () =>{
+        //close the BooksySearchPage component first b4 navigating
+        close()
+        navigate("/salonshops")
 
     }
 
-    // search function
-    const handleSearch = () =>{
-
-        //close the BooksySearchPage component first b4 navigating
-        dispatchs({type:"CLOSE"})
-        navigate("/salonshops")
-
+    //close the Popover component and enable scroll
+    const handleClose = () =>{
+        setOpenScroll(false)
+        close()
     }
     
   return (
@@ -34,7 +29,7 @@ function BooksyLocationSearchPage() {
     >
 
       <div
-        onClick={CloseBooksyLocationPage}
+        onClick={handleClose}
         className='bgTransparent animate__animated animate__fadeIn  hidden lg:block absolute top-0 right-0 bottom-0 w-full h-screen'
       >
         {/* close the BooksySearchPage component */}
@@ -52,14 +47,12 @@ function BooksyLocationSearchPage() {
                 <div
                     className='w-full px-[1rem] flex items-center'
                 >
-                    {/* <Link to="/"> */}
                     <BsArrowLeft
-                        onClick={CloseBooksyLocationPage}
+                        onClick={handleClose}
                         className='text-[1.4rem]'
                     />
-                    {/* </Link> */}
                     <input
-                        className='bg-transparent text-[#d6d6d6] placeholder-[#d6d6d6] border-transparent w-full pl-[1rem] py-[1rem] lg:py-[1rem] md:py-[1.5rem]'
+                        className='bg-transparent text-[#d6d6d6] placeholder-[#d6d6d6] outline-none border-transparent w-full pl-[1rem] py-[1rem] lg:py-[1rem] md:py-[1.5rem]'
                         type='text'
                         placeholder='Where?'
                     />

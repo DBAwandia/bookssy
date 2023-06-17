@@ -6,18 +6,9 @@ import Navbar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
 import HeroBottom from '../../../components/HomeComponents/HeroBottom'
 import Footbar from '../../../components/Footbar'
-import { SearchProductContext } from '../../../Context/SearchProductContext'
-import BooksySearchPage from '../../BooksySearchpage/BooksySearchPage'
-import BooksyLocationSearchPage from '../../BooksyLocationSearchPage/BooksyLocationSearchPage'
-import { SearchLocationContext } from '../../../Context/SearchLocationContext'
 
 function Hairsalon() {
-  //opening BooksySearchPage component
-  const { open } = useContext(SearchProductContext)
-
-  //opening BooksyLocationSearchPage component
-  const { opens } = useContext(SearchLocationContext)
-
+ 
   return (
     <div
       className="w-full overflow-x-hidden relative flex flex-col"
@@ -83,32 +74,11 @@ function Hairsalon() {
     </div>
 
     <div 
-        className='w-full z-[9999999999999] lg:hidden fixed bottom-0 right-0 left-0'
+        className='w-full z-[99999] lg:hidden fixed bottom-0 right-0 left-0'
       >
         <Footbar/>
     </div>
-
-    {/* opne the BooksySearchPage component */}
-    {open &&
-        <div 
-          className='w-full animate__animated animate__fadeIn h-screen z-[9999999999999] fixed bottom-0 top-0 left-0 right-0'
-        >
-          <BooksySearchPage/>
-        </div>
-      }
-
-      {/* open the BooksyLocationSearchPagee component */}
-      {opens &&
-        <div 
-          className='w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] '
-        >
-          <BooksyLocationSearchPage/>
-        </div>
-      }
-
-      
-
-    </div>
+  </div>
   )
 }
 
