@@ -8,6 +8,10 @@ export default function Login(props) {
     const [activeTab, setActiveTab] = useState("emailInput");
     const [showPassword, setShowpassword] = useState(false);
 
+    const showPasswordHandler = () => {
+    setShowpassword(!showPassword);
+    }
+
     const openTab = (tabName) => {
     setActiveTab(tabName);
     };
@@ -54,6 +58,11 @@ return (
             <input type="number" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Phone Number"/>
             <br />
             <input type="password" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Set Password"/>
+            <span>
+                Show Password {"  "}
+            <input type="checkbox" name="" id="" className="bg-black" onClick={showPasswordHandler}/>
+            
+            </span>
 
             <button className="w-[90%] text-center bg-[#00a3ad] py-3 font-extrabold mx-auto my-0 block  rounded-xl text-white">Continue</button>
         </div>)}
