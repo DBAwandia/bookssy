@@ -47,7 +47,7 @@ return (
         <div className="w-full pt-10">
             <input className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%] mb-24 select-none" type="email" name="" id="" placeholder="Email"/>
 
-            <button onClick={() => openTab("Done")} className="w-[90%] text-center bg-[#00a3ad] py-3 font-extrabold mx-auto my-0 block  rounded-xl text-white ">Continue</button>
+            <button onClick={() => openTab("Done")} className="w-[90%] text-center bg-[#00a3ad] py-3 font-extrabold mx-auto my-0 block  rounded-xl text-white  select-none">Continue</button>
         </div>
         )}
         {activeTab === "Done" && (
@@ -70,8 +70,8 @@ return (
                 <a href="#" className="text-[#00a3ad] select-none"> Booksy's Terms of Service</a>
             </span></p> 
             <div className="flex gap-[10%] justify-center">
-                <button  className="w-[40%] text-center bg-[#000101f6] py-3 font-extrabold   rounded-xl text-white" onClick={() => openTab("emailInput")}>Prev</button>
-                <button className="w-[40%] text-center bg-[#00a3ad] py-3 font-extrabold   rounded-xl text-white">Done</button>
+                <button  className="w-[40%] text-center bg-[#000101f6] py-3 font-extrabold   rounded-xl text-white select-none" onClick={() => openTab("emailInput")}>Prev</button>
+                <button className="w-[40%] text-center bg-[#00a3ad] py-3 font-extrabold   rounded-xl text-white select-none ">Done</button>
             </div>
         </div>)}
         </form>
