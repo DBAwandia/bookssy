@@ -145,15 +145,19 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-[1rem] text-white">
 
           {/* 4 using headless UI // show login */}
-          <Popover>
-            <Popover.Button>
+          <Popover className="w-full">
+            <Popover.Button onClick={()=>setOpenScroll(true)}>
               <div className="flex gap-1 items-center">
                 <HiOutlineUserCircle size={35} />
                 <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
               </div>
             </Popover.Button>
-            <Popover.Panel className="fixed z-50  w-[30%] bg-white text-black left-[35%] top-24 shadow-2xl" >
-              <Login/>
+            <Popover.Panel className="w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] " >
+              {({ close }) => (
+              <div className="removeZindex">
+                <Login close={close} setOpenScroll={setOpenScroll}/>
+                  </div>
+                  )}
             </Popover.Panel>
           </Popover>
 
