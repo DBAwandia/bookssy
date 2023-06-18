@@ -7,6 +7,7 @@ import Salondetails from "./Pages/Hairsalon/Hairsalonshop/Salondetails";
 import BarberShop from "./Pages/Barbershop/TheBarberShop/BarberShop";
 import ChooseBarberShop from "./Pages/Barbershop/ChooseBarberShop/ChooseBarberShop";
 import Language from "./Pages/Language/Language";
+import Login from "./Pages/Login/Login";
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function App() {
         <Route 
           path="/barbershops"
           element={<BarberShop/>}
+        />
+        
+        <Route 
+          path="/login"
+          element={<Login/>}
         />
 
         {/* salonshop page if location / city is not choosen by user */}

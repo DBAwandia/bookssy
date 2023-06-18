@@ -29,7 +29,7 @@ return (
       >
         {/* close the BooksySearchPage component */}
     </div>
-          <div className=" lg:absolute top-[10%]  z-[99999999999999999] lg:opacity-[0.95] lg:w-[40%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[2rem]">
+          <div className=" lg:absolute top-[3%]  z-[99999999999999999] lg:opacity-[0.95] lg:w-[40%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[2rem]">
             {activeTab === "emailInput"  && (
             <h2 className="text-center font-semibold text-lg font-sans pt-3 pb-[60px] select-none">My Email Address is:</h2> )}
             {activeTab === "Done"  && (
@@ -58,7 +58,7 @@ return (
             <input type="tel" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Phone Number"/>
             <br />
             <input type={showPassword ? "text" : "password"} name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Set Password"/>
-            <span className="px-[10%]  select-none block ml-[50%] my-2 mb-11" >
+            <span className="px-[10%] flex items-center justify-end gap-3 my-2 mb-11" >
                <label className="cursor-pointer" htmlFor="checkboxinput">
                 Show Password {"  "}
                </label>
