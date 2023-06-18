@@ -39,8 +39,8 @@ return (
                 </div>
             )}
         <div className="flex justify-center gap-2">
-            <span className="w-[40%] border-none bg-[#03929b] p-[2px] rounded-2xl"></span>
-            <span className="w-[40%] border-none bg-[#03929b] p-[2px] rounded-2xl"></span>
+            <span className={`${activeTab === "emailInput" ? "bg-[#03929b]" : "bg-white"}  w-[40%] border-none  p-[2px] rounded-2xl`}></span>
+            <span className={`${activeTab === "Done" ? "bg-[#03929b]" : "bg-white"}  w-[40%] border-none  p-[2px] rounded-2xl`}></span>
         </div>
         <form action="">
             {activeTab === "emailInput"  && (
@@ -55,16 +55,24 @@ return (
             <input className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" type="email" name="" id="" placeholder="First and Last Name"/>
 
             <br />
-            <input type="number" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Phone Number"/>
+            <input type="tel" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Phone Number"/>
             <br />
-            <input type="password" name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Set Password"/>
-            <span>
+            <input type={showPassword ? "text" : "password"} name="" id="" className="block my-0 mx-auto border border-solid border-[#00000093] rounded-lg w-[80%]  select-none" placeholder="Set Password"/>
+            <span className="px-[10%]  select-none block ml-[50%] my-2 mb-11" >
+               <label className="cursor-pointer" htmlFor="checkboxinput">
                 Show Password {"  "}
-            <input type="checkbox" name="" id="" className="bg-black" onClick={showPasswordHandler}/>
+               </label>
+            <input onClick={showPasswordHandler} type="checkbox" name="" id="checkboxinput" className="cursor-pointer bg-[#00000063]"  />
             
             </span>
-
-            <button className="w-[90%] text-center bg-[#00a3ad] py-3 font-extrabold mx-auto my-0 block  rounded-xl text-white">Continue</button>
+           <p className="text-center text-sm mb-4">By clicking below you agree to 
+            <span className="cursor-pointer">
+                <a href="#" className="text-[#00a3ad] select-none"> Booksy's Terms of Service</a>
+            </span></p> 
+            <div className="flex gap-[10%] justify-center">
+                <button  className="w-[40%] text-center bg-[#000101f6] py-3 font-extrabold   rounded-xl text-white" onClick={() => openTab("emailInput")}>Prev</button>
+                <button className="w-[40%] text-center bg-[#00a3ad] py-3 font-extrabold   rounded-xl text-white">Done</button>
+            </div>
         </div>)}
         </form>
         </div>
