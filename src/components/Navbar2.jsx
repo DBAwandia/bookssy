@@ -2,12 +2,24 @@
 import Logo from "../assets/BooksyLogo.png";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsChevronDown } from "react-icons/bs";
-import { FLAGS } from "../../utitlities/iconsAndImages";
 import { Link } from "react-router-dom"
 import { BsArrowRight } from "react-icons/bs"
+import { useEffect, useState } from "react";
+import Language from "../Pages/Language/Language";
+import { Popover } from "@headlessui/react";
+import { KE } from "country-flag-icons/react/3x2";
 
 
 export default function Navbar2() {
+ //enable and disable scroll when popover
+ const [ openScroll , setOpenScroll ] = useState(false)
+ useEffect(() => {
+   if (openScroll) {
+     document.body.style.overflow = 'hidden';
+   } else {
+     document.body.style.overflow = 'unset';
+   }
+ }, [openScroll]);
 
   return (
     <section className="w-full bg-transparent grid grid-col-1 gap-[1rem] lg:flex lg:justify-between items-center">
@@ -34,23 +46,51 @@ export default function Navbar2() {
       </div>
 
       {/* OTHERS */}
-      <div className="hidden  lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
+      <div className="hidden lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
         {/* login */}
         <div className="flex gap-1 items-center">
-          <HiOutlineUserCircle size={35} />
+          <HiOutlineUserCircle size={25} />
           <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
         </div>
 
         {/* language */}
-        <div className="flex flex-row gap-1 items-center">
-          <img
-            src={FLAGS.usaFlag}
-            alt="USA"
-            style={{ width: "25px", height: "20px " }}
-          />
-          <p className="text-[0.75rem] font-semibold">KE</p>
-          <BsChevronDown size={10} />
-        </div>
+        <div className="w-auto">
+             {/* 4 using headless UI // show Language*/}
+             <Popover className="w-full">
+                <Popover.Button 
+                  onClick={()=>setOpenScroll(true)} 
+                  className='flex gap-1 items-center'
+                >
+                    <div
+                      className='flex items-center cursor-pointer gap-1'
+                    >
+                      <KE 
+                        className="w-[1.2rem] h-[1.2rem]"
+                      />
+                      <p
+                        className='hover:text-[#8c8b88] text-[0.75rem]'
+                      >
+                          KE
+                      </p>
+                    </div>         
+                    <BsChevronDown size={12} />
+                </Popover.Button>
+                <Popover.Panel
+                  className='w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] ' 
+                >
+                  {/* pass close as prop  */}
+                  {({ close }) => (
+                    <div className="removeZindex">
+                      <Language 
+                        setOpenScroll={setOpenScroll} 
+                        close={close}
+                      />
+                    </div>
+                  )}
+                </Popover.Panel>
+              </Popover>
+          </div>
+
 
         {/* list your business button */}
         <button className=" uppercase bg-white text-black text-[0.65rem] font-medium px-4 py-2 rounded-lg">

@@ -47,15 +47,16 @@ function Footbar() {
                 <p>Appointments</p>
             </div>
 
-            <div
-                className='flex items-center flex-col text-[#8c8b88] gap-1' 
-            >
-                <RxPerson
-                    className='text-[1.3rem]'
-                />
-                <p>Profile</p>
-            </div>
-
+            <Link to="/languages">
+                <div
+                    className='flex items-center flex-col text-[#8c8b88] gap-1' 
+                >
+                    <RxPerson
+                        className='text-[1.3rem]'
+                    />
+                    <p>Profile</p>
+                </div>
+            </Link>
       </div>
     </div>
   )
