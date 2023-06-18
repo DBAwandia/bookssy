@@ -184,43 +184,43 @@ export const hairSalonCustomerReviewData = [
 export const hairSalonCities = [
         {
                 id: 1,
-                name: "Hair salon in San Diego"
+                name: "Hair salon in Nakuru"
         },
         {
                 id: 2,
-                name: "Hair salon Dallas"
+                name: "Hair salon Nairobi"
         },
         {
                 id: 3,
-                name: "Hair salon Texas"
+                name: "Hair salon Eldoret"
         },
         {
                 id: 4,
-                name: "Hair salon San Jose"
+                name: "Hair salon Kisumu"
         },
         {
                 id: 5,
-                name: "Hair salon Philadelphia"
+                name: "Hair salon Mombasa"
         },
         {
                 id: 6,
-                name: "Hair salon New york"
+                name: "Hair salon Malindi"
         },
         {
                 id: 7,
-                name: "Hair salon Austin"
+                name: "Hair salon Kakamega"
         },
         {
                 id: 8,
-                name: "Hair salon Atlanta"
+                name: "Hair salon Nandi"
         },
         {
                 id: 9,
-                name: "Hair salon Houston"
+                name: "Hair salon Malaba"
         },
         {
                 id: 10,
-                name: "Hair salon Columbus"
+                name: "Hair salon Garissa"
         },
     ]
 
@@ -228,43 +228,43 @@ export const hairSalonCities = [
 export const barberShopsCities = [
         {
                 id: 1,
-                name: "Barber shop in in San Diego"
+                name: "Barber shop in in Garissa"
         },
         {
                 id: 2,
-                name: "Barber shop in Dallas"
+                name: "Barber shop in Kitui"
         },
         {
                 id: 3,
-                name: "Barber shop in Texas"
+                name: "Barber shop in Nakuru"
         },
         {
                 id: 4,
-                name: "Barber shop in San Jose"
+                name: "Barber shop in Eldoret"
         },
         {
                 id: 5,
-                name: "Barber shop in Philadelphia"
+                name: "Barber shop in Nairobi"
         },
         {
                 id: 6,
-                name: "Barber shop in New york"
+                name: "Barber shop in Laikipia"
         },
         {
                 id: 7,
-                name: "Barber shop in Austin"
+                name: "Barber shop in Naivasha"
         },
         {
                 id: 8,
-                name: "Barber shop in Atlanta"
+                name: "Barber shop in Kisumu"
         },
         {
                 id: 9,
-                name: "Barber shop in Houston"
+                name: "Barber shop in Kitengela"
         },
         {
                 id: 10,
-                name: "Barber shop in Columbus"
+                name: "Barber shop in Malaba"
         },
     ]
     
@@ -369,9 +369,9 @@ export const SalonServiceTypes = [
             mobileService: "true",
             duration: "30min",
             images: [
-                    "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/004d482dd9044706a02d160ab85bba-kamila-eyelash-hunters-creek-o-biz-photo-7173be2e72c94a7baaf90c61084652-booksy.jpeg?size=640x427",
-                    "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/b36813bbd08747b7ac6a7b75982271-kamila-eyelashs-eyebrows-biz-photo-3032465ddc9c46ebba43ce320daa2d-booksy.jpeg?size=640x427",
-                    "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/c7045f36f9494859abcca39bda092c-kamila-eyelashs-eyebrows-biz-photo-be153e60c1d34f67b9f64e09d18576-booksy.jpeg?size=640x427"
+                    "https://avatars.mds.yandex.net/i?id=e285b660eb0e62ab18b5eaec481a3fe9049d82b1-8497071-images-thumbs&n=13",
+                    "https://avatars.mds.yandex.net/i?id=c0cef485f92a2550110642f22be71b4c-4255243-images-thumbs&ref=rim&n=33&w=150&h=150",
+                    "https://avatars.mds.yandex.net/i?id=1af09b0f5ea50164750df70d5eb44d1f-5682746-images-thumbs&ref=rim&n=33&w=200&h=150"
                     ]
     },
     {
@@ -426,9 +426,9 @@ export const salonJson = [
             reviews: 283,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/004d482dd9044706a02d160ab85bba-kamila-eyelash-hunters-creek-o-biz-photo-7173be2e72c94a7baaf90c61084652-booksy.jpeg?size=640x427",
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/b36813bbd08747b7ac6a7b75982271-kamila-eyelashs-eyebrows-biz-photo-3032465ddc9c46ebba43ce320daa2d-booksy.jpeg?size=640x427",
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/224804/biz_photo/c7045f36f9494859abcca39bda092c-kamila-eyelashs-eyebrows-biz-photo-be153e60c1d34f67b9f64e09d18576-booksy.jpeg?size=640x427"
+            "https://avatars.mds.yandex.net/i?id=d56cdf12a07985d2af27ac8afafc89ab-4080151-images-thumbs&n=13",
+            "https://avatars.mds.yandex.net/i?id=63b3805ee69d1f7dc68ddcd757653510f335be04-7543473-images-thumbs&n=13",
+            "https://avatars.mds.yandex.net/i?id=d304fc0927793f1c9040587a7fff8d7d-3985569-images-thumbs&n=13"
             ]
         },
         {
@@ -440,9 +440,9 @@ export const salonJson = [
             reviews: 283,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/120238/biz_photo/d00db61f28864486af657399539dc9-hair-palace-biz-photo-0ba5c619d0b846738c676969919df6-booksy.jpeg?size=640x427",
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/120238/biz_photo/81bbc6babbf240b0a1f4f6278f9e14-hair-palace-biz-photo-1e60407363e841dd828bb709f8959e-booksy.jpeg?size=640x427",
-            "https://d2zdpiztbgorvt.cloudfront.net/region1/us/120238/biz_photo/2a1a6767bb5849278300a0d260eb2b-hair-palace-biz-photo-b30912f946004d2b845cddda44044d-booksy.jpeg?size=640x427"
+            "https://i.pinimg.com/originals/1d/e2/77/1de277dc57e14bf17d9c7678e650f6e7.jpg",
+            "https://avatars.mds.yandex.net/i?id=ea83891113aacfbc20462148b2a5d4ce87154c32-4230422-images-thumbs&n=13",
+            "https://avatars.mds.yandex.net/i?id=52d12196bdf375006a3e153dfcd03340f24db045-5236860-images-thumbs&n=13"
             ]
         },
         {
@@ -454,8 +454,8 @@ export const salonJson = [
             reviews: 23,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/234e98cddb3247aaae1690e3d89f51-nzuri-a-styling-lounge-biz-photo-28ef816fda5043bd9a94decd091eda-booksy.jpeg?size=640x427",
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/06e6f9add4e047b980f14145b58070-nzuri-a-styling-lounge-biz-photo-8b2f89defdee498b99ab4914feaa66-booksy.jpeg?size=640x427",
+                "https://avatars.mds.yandex.net/i?id=fe9d210ae1b7d357326ef2bf235d600a-5667701-images-thumbs&n=13",
+                "https://avatars.mds.yandex.net/i?id=b64297d8376c836aa25480646770869e66cd83cf-9181638-images-thumbs&n=13",
                 "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/0673fd598f11415ebcb165fbe06404-nzuri-a-styling-lounge-biz-photo-6c04dc75a7b543a19788d1e66ca041-booksy.jpeg?size=640x427"
             ]
         },
@@ -468,8 +468,8 @@ export const salonJson = [
             reviews: 0,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/91693/biz_photo/e7a0d2c1f3884d48a713b115599481-brothers-hair-studio-biz-photo-3e07100f66ef4e48bed6edfc2289bc-booksy.jpeg?size=640x427",
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/91693/biz_photo/3cd74e1635ed405bbe4c0be0efa27e-brothers-hair-studio-biz-photo-fea868cb72f34ca78e29b652c22885-booksy.jpeg?size=640x427",
+                "https://avatars.mds.yandex.net/i?id=516774f2d0f79ff251bfa75badfb15298b70861d-8982254-images-thumbs&n=13",
+                "https://avatars.mds.yandex.net/i?id=7b0cd574684f7c3dbdb2b49ce2944a47cbb3a94a-8196573-images-thumbs&n=13",
                 "https://d2zdpiztbgorvt.cloudfront.net/region1/us/91693/biz_photo/fafab8449b0e424c8289d6464e34d5-brothers-hair-studio-biz-photo-2ba73387f6a042de91c538ee91be70-booksy.jpeg?size=640x427"
             ]
         },
@@ -482,8 +482,8 @@ export const salonJson = [
             reviews: 500,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/85043/biz_photo/ceecdc43d0f64bf79b6e30896d05da-the-black-white-salon-biz-photo-79a24af8eb524bcba2303963afe1a4-booksy.jpeg?size=640x427",
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/85043/biz_photo/afad4158e14d47348c9e8d69f11516-the-black-white-salon-biz-photo-75648fcfcf5641f8917a806d5b2fc1-booksy.jpeg?size=640x427",
+                "https://avatars.mds.yandex.net/i?id=77cc5ebf682b460b5c1ce9befdda67fa47f336cd-4055677-images-thumbs&n=13",
+                "https://avatars.mds.yandex.net/i?id=4c1a3d70cb4b6b6ce93a32924a7568e48fe34e3e-8185147-images-thumbs&n=13",
                 "https://d2zdpiztbgorvt.cloudfront.net/region1/us/85043/biz_photo/59d0165a3c2c4140abadb677d83a6d-the-black-white-salon-biz-photo-8ac6641643114e3582ce24e47a3a1d-booksy.jpeg?size=640x427"
             ]
         },
@@ -496,8 +496,8 @@ export const salonJson = [
             reviews: 238,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/06e6f9add4e047b980f14145b58070-nzuri-a-styling-lounge-biz-photo-8b2f89defdee498b99ab4914feaa66-booksy.jpeg?size=640x427",
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/234e98cddb3247aaae1690e3d89f51-nzuri-a-styling-lounge-biz-photo-28ef816fda5043bd9a94decd091eda-booksy.jpeg?size=640x427",
+                "https://avatars.mds.yandex.net/i?id=bd797b953a766fef6cfb80289e57bbf00d11e34f-5887217-images-thumbs&n=13",
+                "https://avatars.mds.yandex.net/i?id=4160c97ae19304299e2ecc01379305b3c68fe70e-8552056-images-thumbs&n=13",
                 "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/0673fd598f11415ebcb165fbe06404-nzuri-a-styling-lounge-biz-photo-6c04dc75a7b543a19788d1e66ca041-booksy.jpeg?size=640x427"
             ]
         },
@@ -510,8 +510,8 @@ export const salonJson = [
             reviews: 15,
             aboutUs: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             images: [
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/234e98cddb3247aaae1690e3d89f51-nzuri-a-styling-lounge-biz-photo-28ef816fda5043bd9a94decd091eda-booksy.jpeg?size=640x427",
-                "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/06e6f9add4e047b980f14145b58070-nzuri-a-styling-lounge-biz-photo-8b2f89defdee498b99ab4914feaa66-booksy.jpeg?size=640x427",
+                "https://avatars.mds.yandex.net/i?id=fbdb81f866c13fe1f598148db867bdbeab7417ca-9008017-images-thumbs&n=13",
+                "https://avatars.mds.yandex.net/i?id=2a00000179e29c1a7e251fbda0a472988fd2-4350935-images-thumbs&n=13",
                 "https://d2zdpiztbgorvt.cloudfront.net/region1/us/123096/biz_photo/0673fd598f11415ebcb165fbe06404-nzuri-a-styling-lounge-biz-photo-6c04dc75a7b543a19788d1e66ca041-booksy.jpeg?size=640x427"
             ]
         }

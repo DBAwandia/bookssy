@@ -12,6 +12,8 @@ import BooksyLocationSearchPage from "../Pages/BooksyLocationSearchPage/BooksyLo
 import BooksySearchPage from "../Pages/BooksySearchpage/BooksySearchPage";
 import { useState } from "react";
 import { useEffect } from "react";
+import { KE } from "country-flag-icons/react/3x2";
+import Language from "../Pages/Language/Language";
 
 
 export default function Navbar() {
@@ -142,13 +144,12 @@ export default function Navbar() {
         </div>
 
         {/* OTHERS */}
-        <div className="hidden lg:flex items-center gap-[1rem] text-white">
-
+        <div className="w-auto hidden lg:flex items-center gap-[0.6rem] text-white">
           {/* 4 using headless UI // show login */}
           <Popover className="w-full">
             <Popover.Button onClick={()=>setOpenScroll(true)}>
               <div className="flex gap-1 items-center">
-                <HiOutlineUserCircle size={35} />
+                <HiOutlineUserCircle size={25} />
                 <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
               </div>
             </Popover.Button>
@@ -162,14 +163,41 @@ export default function Navbar() {
           </Popover>
 
           {/* language */}
-          <div className="flex flex-row gap-1 items-center">
-            <img
-              src={FLAGS.usaFlag}
-              alt="USA"
-              style={{ width: "25px", height: "20px " }}
-            />
-            <p className="text-[0.75rem] font-semibold">US</p>
-            <BsChevronDown size={10} />
+          <div className="w-auto">
+             {/* 5 using headless UI // show Language*/}
+             <Popover className="w-full">
+                <Popover.Button 
+                  onClick={()=>setOpenScroll(true)} 
+                  className='flex gap-1 items-center'
+                >
+                    <div
+                      className='flex items-center cursor-pointer gap-1'
+                    >
+                      <KE 
+                        className="w-[1.2rem] h-[1.2rem]"
+                      />
+                      <p
+                        className='hover:text-[#8c8b88] text-[0.75rem]'
+                      >
+                          KE
+                      </p>
+                    </div>         
+                    <BsChevronDown size={12} />
+                </Popover.Button>
+                <Popover.Panel
+                  className='w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] ' 
+                >
+                  {/* pass close as prop  */}
+                  {({ close }) => (
+                    <div className="removeZindex">
+                      <Language 
+                        setOpenScroll={setOpenScroll} 
+                        close={close}
+                      />
+                    </div>
+                  )}
+                </Popover.Panel>
+              </Popover>
           </div>
 
           {/* list your business button */}
