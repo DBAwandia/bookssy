@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 export default function Login(props) {
         //close the Popover component and enable scroll
     const handleClose = () =>{
@@ -29,7 +30,7 @@ return (
       >
         {/* close the BooksySearchPage component */}
     </div>
-          <div className=" lg:absolute top-[3%]  z-[99999999999999999] lg:opacity-[0.95] lg:w-[40%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[2rem]">
+          <div className="lg:absolute top-[3%]  z-[99999999999999999] lg:opacity-[0.95] lg:w-[40%] lg:h-[auto] lg:rounded-2xl bg-white lg:py-[2rem]">
             {activeTab === "emailInput"  && (
             <h2 className="text-center font-semibold text-lg font-sans pt-3 pb-[60px] select-none">My Email Address is:</h2> )}
             {activeTab === "Done"  && (

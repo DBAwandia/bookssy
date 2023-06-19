@@ -6,8 +6,8 @@ import ChooseHairSalon from "./Pages/Hairsalon/ChooseHairsalonLocation/ChooseHai
 import Salondetails from "./Pages/Hairsalon/Hairsalonshop/Salondetails";
 import BarberShop from "./Pages/Barbershop/TheBarberShop/BarberShop";
 import ChooseBarberShop from "./Pages/Barbershop/ChooseBarberShop/ChooseBarberShop";
-import Language from "./Pages/Language/Language";
 import Login from "./Pages/Login/Login";
+import Profile from "./Pages/Profile/Profile";
 
 function App() {
   return (
@@ -23,8 +23,8 @@ function App() {
 
         {/* search for products */}
         <Route 
-          path="/languages"
-          element={<Language/>}
+          path="/profile"
+          element={<Profile/>}
         />
         
         {/* salon shops page for each loaction / city */}

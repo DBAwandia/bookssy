@@ -2,7 +2,6 @@ import Logo from "../assets/BooksyLogo.png";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BsChevronDown } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
-import { FLAGS } from "../../utitlities/iconsAndImages";
 import { Link } from "react-router-dom"
 import { BsArrowRight } from "react-icons/bs"
 import { Popover } from '@headlessui/react'

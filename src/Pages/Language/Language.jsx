@@ -4,8 +4,6 @@ import 'animate.css';
 import { Menu } from '@headlessui/react'
 import { useState } from 'react';
 import { AR, BR, CA, CL, ES, FR, GB, IE, KE, MX, PL, PT, US } from 'country-flag-icons/react/3x2'
-import { Link } from 'react-router-dom';
-
 
 function Language({ close , setOpenScroll }) {
     //close , setOpenScroll prop from headless ui passed from navbar where its called
@@ -40,8 +38,7 @@ function Language({ close , setOpenScroll }) {
             <div
                 className='w-full border-b-[0.2px] border-[#eeeeee] flex items-center'
             >
-                {/* delete this <Link to="/" /> after profile page is created */}
-                <Link to="/">
+                
                     <div
                         className='w-full justify-start p-[1rem] flex items-center'
                     >
@@ -53,7 +50,6 @@ function Language({ close , setOpenScroll }) {
                         />
                         
                     </div>
-                </Link>
             </div>
             <div 
                 className='text-[1rem] font-bold px-[1rem] py-[0.5rem] w-full border-b-[0.2px] border-[#eeeeee]'
@@ -188,7 +184,7 @@ function Language({ close , setOpenScroll }) {
                         Europe
                     </p>
                     <div
-                        className='w-full grid grid-cols-2 gap-[1rem]'
+                        className='w-full grid grid-cols-1 md:grid-cols-2 gap-[1rem]'
                     >
                             <div
                                 className='flex items-center cursor-pointer gap-3'

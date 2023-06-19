@@ -47,7 +47,7 @@ function Footbar() {
                 <p>Appointments</p>
             </div>
 
-            <Link to="/languages">
+            <Link to="/profile">
                 <div
                     className='flex items-center flex-col text-[#8c8b88] gap-1' 
                 >
