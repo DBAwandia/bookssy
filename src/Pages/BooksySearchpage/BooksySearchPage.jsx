@@ -89,10 +89,9 @@ function BooksySearchPage({ close , setOpenScroll }) {
                     )}
                 </div>
             </div>
-        </div>
-        <div
-            className='w-[100%] md:grid md:justify-center md:items-center px-[1rem] py-[2rem] md:py-[4rem] lg:py-0'
-        >
+            <div
+                className='w-[100%] md:grid md:justify-center md:items-center px-[1rem]'
+            >
             <button
                 onClick={handleSearch}
                 className='uppercase md:w-[20rem] lg:w-[18rem] lg:h-[3.1rem]  w-[100%] bg-[#00a3ad] text-white font-semibold md:h-[3.5rem] h-[2.7rem] rounded-md md:rounded-lg'
@@ -100,6 +99,8 @@ function BooksySearchPage({ close , setOpenScroll }) {
                 Search
             </button>
         </div>
+        </div>
+        
       </div>
     </div>
   )
