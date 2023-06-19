@@ -7,6 +7,7 @@ import moment from 'moment';
 import { TfiAngleDown, TfiAngleUp } from "react-icons/tfi"
 // import {  useNavigate } from 'react-router-dom'
 import 'animate.css';
+import { useNavigate } from 'react-router-dom';
 
 
 function BooksyDateSearch({ close , setOpenScroll }) {
@@ -47,6 +48,16 @@ function BooksyDateSearch({ close , setOpenScroll }) {
         close()
     }
     
+    const navigate = useNavigate()
+   
+    // search function
+    const handleSearch = () =>{
+
+        //close the BooksySearchPage component first b4 navigating
+        close()
+        navigate("/salonshops")
+
+    }
     return (
         <div
             className='relative min-h-0 overflow-x-hidden lg:min-h-screen w-full lg:flex lg:justify-center lg:items-center text-[0.95rem]'
@@ -182,7 +193,7 @@ function BooksyDateSearch({ close , setOpenScroll }) {
                     className='w-[100%] md:grid md:justify-center md:items-center px-[1rem] py-[2rem] md:py-[1rem]'
                 >
                     <button
-                        // onClick={handleSearch}
+                        onClick={handleSearch}
                         className='uppercase md:w-[20rem] lg:w-[18rem] lg:h-[3.1rem]  w-[100%] bg-[#00a3ad] text-white font-semibold md:h-[3.5rem] h-[2.7rem] rounded-md md:rounded-lg'
                     >
                         Search

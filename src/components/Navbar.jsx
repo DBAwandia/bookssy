@@ -200,7 +200,7 @@ export default function Navbar() {
           </div>
 
           {/* list your business button */}
-          <button className=" uppercase bg-white text-black text-[0.65rem] font-medium px-4 py-[0.5rem] rounded-md md:rounded-lg">
+          <button className="uppercase items-center w-[15rem] bg-white text-black text-[0.65rem] font-medium px-3 py-[0.5rem] rounded-md md:rounded-lg">
             List your business
           </button>
         </div>

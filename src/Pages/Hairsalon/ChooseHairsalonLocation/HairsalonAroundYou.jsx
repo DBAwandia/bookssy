@@ -1,5 +1,6 @@
 import { BsArrowRight } from "react-icons/bs"
 import { hairSalonCities } from "../../../assets/Dummydata/Dummydata"
+import { Link } from "react-router-dom"
 
 function HairsalonAroundYou() {
   return (
@@ -25,19 +26,21 @@ function HairsalonAroundYou() {
                         key={item.id}
                         className='w-auto px-[0.7rem] py-[0.5rem] border-2 border-[#ececec] rounded-md md:rounded-xl'
                     >
-                        <div 
-                            className='flex items-center justify-between'
-                        >
-                            <p 
-                            className='text-[#383734]'
+                        <Link to="/salonshops">
+                            <div 
+                                className='flex items-center justify-between'
                             >
-                                {item.name}
-                            </p>
-                            <BsArrowRight
-                                className='lg:text-[1.6rem] text-[1.3rem] text-[#bfbfbf]'
-                            />
-                        </div>
-                       
+                                <p 
+                                className='text-[#383734]'
+                                >
+                                    {item.name}
+                                </p>
+                                <BsArrowRight
+                                    className='lg:text-[1.6rem] text-[1.3rem] text-[#bfbfbf]'
+                                />
+                            </div>
+                        
+                        </Link>
                     </div>
                     
                 )}
