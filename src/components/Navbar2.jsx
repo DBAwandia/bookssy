@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Language from "../Pages/Language/Language";
 import { Popover } from "@headlessui/react";
 import { KE } from "country-flag-icons/react/3x2";
+import Login from "../Pages/Login/Login";
 
 
 export default function Navbar2() {
@@ -49,8 +50,22 @@ export default function Navbar2() {
       <div className="hidden lg:w-[70%] lg:flex lg:flex-row justify-end items-center gap-7 text-white">
         {/* login */}
         <div className="flex gap-1 items-center">
-          <HiOutlineUserCircle size={25} />
-          <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
+          {/* 4 using headless UI // show login */}
+          <Popover className="w-full">
+            <Popover.Button onClick={()=>setOpenScroll(true)}>
+              <div className="flex gap-1 items-center">
+                <HiOutlineUserCircle size={25} />
+                <p className="text-[0.75rem] font-semibold">Login / Sign Up</p>
+              </div>
+            </Popover.Button>
+            <Popover.Panel className="w-full animate__animated animate__fadeIn fixed top-0 left-0 bottom-0 right-0 h-screen z-[9999999999999] " >
+              {({ close }) => (
+              <div className="removeZindex">
+                <Login close={close} setOpenScroll={setOpenScroll}/>
+                  </div>
+                  )}
+            </Popover.Panel>
+          </Popover>
         </div>
 
         {/* language */}
