@@ -34,7 +34,7 @@ export default function Salondetails() {
         <div className='bg-[#1b1d21] lg:h-[5rem] h-[3.5rem] md:px-[2rem] pt-[1rem]' >
           <HeroBottom/>
         </div>
-  </div>
+     </div>
       {/* main tag for salon details  */}
       <main className="pt-9 lg:px-8 px-5 lg:flex gap-[5%]">
         <aside className="lg:w-[65%] w-full">
@@ -43,6 +43,8 @@ export default function Salondetails() {
             images={data.images}
             ratings={data.ratings}
             reviews={data.reviews}
+
+            
           />
           <article className="mt-10">
             <h2 className="font-bold text-3xl font-serif text-zinc-700">
