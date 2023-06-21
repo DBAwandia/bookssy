@@ -17,6 +17,7 @@ export default function Hero() {
       />
 
       <div className="w-full lg:h-[550px] lg:absolute lg:top-0 lg:p-10 flex flex-col gap-[2rem] lg:justify-between">
+        
         {/* navbar without the search */}
         <Navbar2 />
         <HeroMiddle />
