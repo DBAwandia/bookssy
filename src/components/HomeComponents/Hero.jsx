@@ -22,6 +22,7 @@ export default function Hero() {
         <Navbar2 />
         <HeroMiddle />
         <HeroBottom />
+        
       </div>
     </section>
   );
