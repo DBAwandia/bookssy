@@ -7,6 +7,7 @@ import Navbar2 from "../Navbar2";
 export default function Hero() {
   return (
     <section className="relative w-full py-[1rem] h-auto lg:h-[550px] bg-black">
+      
       <div className="lg:absolute top-0 left-0 w-full lg:h-[550px] lg:bg-transparent" />
       <video 
         src={HeroVideo} 
