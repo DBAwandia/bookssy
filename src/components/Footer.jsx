@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
 
           <small className="text-gray-400 font-medium">
-            © 2023 Booksy Inc. All rights reserved
+            © 2024 Booksy Inc. All rights reserved
           </small>
         </div>
 
